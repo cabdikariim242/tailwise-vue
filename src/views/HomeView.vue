@@ -1,6 +1,10 @@
 <template>
   <div class="home">
-  <h1>hello vue</h1>
+   this is ho
+  </div>
+
+   <div class="home">
+   this is home 
   </div>
 </template>
 
@@ -9,7 +13,7 @@
 export default {
   name: 'HomeView',
   components: {
-   
+    
   }
 }
 </script>
