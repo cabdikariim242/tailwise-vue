@@ -1,13 +1,15 @@
 <template>
-  <div class="p-4 m-3 bg-red-300">
-   this is the app vue and the original 
+  <div class="flex">
+    <sidebar/>
+    <navbar/>
   </div>
 </template>
 
 <script>
-
+import sidebar from './components/sidebar.vue'
+import navbar from './components/navbar.vue'
 export default {
-  
+  components: {sidebar, navbar}
 }
 </script>
 
