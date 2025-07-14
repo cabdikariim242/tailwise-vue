@@ -1,5 +1,5 @@
 <template>
-  <div class="flex">
+    <div class="flex">
     <sidebar/>
     <navbar/>
   </div>
@@ -8,11 +8,21 @@
 <script>
 import sidebar from './components/sidebar.vue'
 import navbar from './components/navbar.vue'
+
+
 export default {
-  components: {sidebar, navbar}
-}
+  components:
+   {sidebar, navbar},
+
+};
+
+
 </script>
 
 
 
-
+<style>
+body{
+  height: 8400px;
+}
+</style>
