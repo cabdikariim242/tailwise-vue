@@ -1,11 +1,9 @@
 <template>
   <div class="home">
-   this is ho
+   this is home page
   </div>
 
-   <div class="home">
-   this is home 
-  </div>
+  
 </template>
 
 <script>
