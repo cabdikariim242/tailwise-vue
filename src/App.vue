@@ -1,7 +1,8 @@
 <template>
-    <div class="flex bg-[#f1f4f8]">
-    <sidebar/>
-    <navbar/>
+    <div class="flex ">
+ <sidebar/>
+    <navbar/> 
+  
   </div>
 </template>
 
