@@ -1,5 +1,5 @@
 <template>
-    <div class="flex">
+    <div class="flex bg-[#f1f4f8]">
     <sidebar/>
     <navbar/>
   </div>
