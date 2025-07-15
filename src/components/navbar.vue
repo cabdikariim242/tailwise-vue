@@ -9,7 +9,7 @@
     <div
         :class="[
         'transition-colors duration-300',
-        isScrollingUp ? 'bg-[#1b4b76]' : 'bg-[#051662]',
+        isScrollingUp ? 'bg-[#1b4b76]' : 'bg-[#051662] ml-10',
       ]"
     class="text-center fixed top-5 left-[115px]  right-5 rounded-lg h-[60px]  font-bold  text-white text-[20px]">
         <p>this is a test</p>
