@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar">
+  <div class="navbar ">
     <div
       class="absolute top-0 left-0 right-0 h-[300px]"
       :class="[
@@ -14,17 +14,17 @@
             ? 'bg-[#1b4b76]'
             : 'bg-[#051662] px-3 transtiton-all duration-300',
         ]"
-        class="flex justify-between items-center fixed top-5 left-[115px] right-5 rounded-lg h-[60px]"
+        class="flex justify-between items-center fixed top-5 lg:left-[115px] left-[5px] md:left-[115px] right-5 rounded-lg h-[60px]"
       >
         
 
     <div class="flex lg:hidden md:hidden ">
-              <i @click="$emit('toggle-this', !isopen)" class="fa-solid fa-bars text-[25px] p-[28px]"></i>
+        <i @click="$emit('toggle-this', !isopen)" class="fa-solid fa-bars text-[25px] p-[28px]"></i>
 
     </div>
 
 
-        <div class="container-1 ml-3">
+        <div class="container-1 ml-3 hidden lg:flex md:flex">
           <router-link to="/" class="mr-1 text-[#eff1f1] font-light">
             App
             <i
@@ -43,7 +43,7 @@
         </div>
 
         <div
-          class="container-2 flex items-center w-[320px] px-4 py-2 rounded-lg bg-white/20"
+          class="container-2  items-center w-[320px] px-4 py-2 rounded-lg bg-white/20 hidden lg:flex md:flex sm:flex"
         >
           <!-- Icon -->
           <i

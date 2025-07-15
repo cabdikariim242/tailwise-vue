@@ -2,7 +2,7 @@
   <div class="z-10 relative">
     <div 
       style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6)"
-      class="phone:hidden  flex flex-col  bg-[#fff] group fixed bottom-3 top-0 left-3 transition-all duration-300 hover:w-[300px] w-[80px] mr-10 mt-5 rounded-lg"
+      class="hidden  lg:flex md:flex flex-col  bg-[#fff] group fixed bottom-3 top-0 left-3 transition-all duration-300 hover:w-[300px] w-[80px] mr-10 mt-5 rounded-lg"
     >
     <!-- all icons are here -->
 <div class="flex  ">
