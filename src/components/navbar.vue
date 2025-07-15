@@ -11,7 +11,7 @@
         'transition-colors duration-300',
         isScrollingUp ? 'bg-[#1b4b76]' : 'bg-[#051662]',
       ]"
-    class=" flex justify-between   fixed top-5 left-[130px]  right-5 rounded-lg h-[60px]">
+    class="  flex justify-between items-center   fixed top-5 left-[130px]  right-5 rounded-lg h-[60px]">
     
     <div class="container-1 ml-3">
       <router-link to="/" class="mr-1 text-[#eff1f1] font-light">
@@ -28,14 +28,34 @@
      
     </div>
 
-     <div class="container-1">
-            <!-- <i class="fa-regular fa-magnifying-glass absolute"></i> -->
+    <div class=" container-2 flex items-center w-[320px] px-4 py-2 rounded-lg bg-white/20">
+  <!-- Icon -->
+  <i class="fa-solid fa-magnifying-glass text-white/60 text-[15px] mr-2"></i>
+  <!-- Input -->
+  <input
+    class="flex-1 bg-transparent outline-none border-none text-white text-[15px] placeholder-white font-serif"
+    type="text"
+    placeholder="Quick search..."
+  />
+  <!-- Shortcut -->
+  <span class="ml-2 text-white/60 font-public-sans select-none text-[15px]">⌘K</span>
+</div>
 
-        
-    </div>
 
-     <div class="container-1">
-      <h3>hello</h3>
+     <div class="container-3 flex items-center gap-6">
+      <i class="fa-solid fa-grip text-[#d1cccc] text-[18px] "></i>
+     <i class="fa-solid fa-expand text-[#d1cccc] text-[18px]"></i>
+      <i class="fa-solid fa-bell text-[#d1cccc] text-[18px]"></i>
+    
+    
+      <!-- Profile avatar -->
+ <img 
+  src="../assets/yiksi.png"
+  alt="Profile"
+  class=" mr-4 w-10 h-10 rounded-full border-4 border-[#2d527c] object-cover"
+/>
+    
+    
     </div>
 
     </div>
