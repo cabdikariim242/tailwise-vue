@@ -14,6 +14,11 @@ import navbar from './components/navbar.vue'
 export default {
   components:
    {sidebar, navbar},
+   data(){
+    return{
+      isopen:false
+    }
+   },
 
     methods: {
   toggle(value) {

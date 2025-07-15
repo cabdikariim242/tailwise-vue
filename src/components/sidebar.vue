@@ -15,15 +15,16 @@
 </div>
 
 
-    <div 
+
+    <div v-if="isopen"
       style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6)"
       class="flex  lg:hidded md:hidden flex-col  bg-[#fff] group fixed bottom-0 top-0 left-0 transition-all duration-300 w-[270px] mr-10 "
     >
     
     <!-- all icons are here -->
 <div class="">
-     <p class="mt-5 group-hover:flex hidden text-[#475569] font-[500] ">ECHO</p>
-     
+      <i @click="$emit('toggle-this', !isopen)" class="fa-solid fa-xmark text-[20px] pr-4 mt-2 p-1 flex  lg:hidden md:hidden"></i>
+
 </div>
 
 
@@ -34,6 +35,8 @@
 
 <script>
 export default {
+    props: ['isopen'],
+
     data(){
         return{
 

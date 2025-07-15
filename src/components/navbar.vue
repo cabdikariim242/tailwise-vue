@@ -18,8 +18,10 @@
       >
         
 
-        <i @click="$emit('toggle-this', !isopen)" class="fa-solid fa-bars text-[25px] flex lg:hidden md:hidden hover:bg-gray-500 p-[28px]"></i>
+    <div class="flex lg:hidden md:hidden ">
+              <i @click="$emit('toggle-this', !isopen)" class="fa-solid fa-bars text-[25px] p-[28px]"></i>
 
+    </div>
 
 
         <div class="container-1 ml-3">
