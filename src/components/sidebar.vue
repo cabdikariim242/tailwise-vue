@@ -13,6 +13,22 @@
 
 
 </div>
+
+
+    <div 
+      style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6)"
+      class="flex  lg:hidded md:hidden flex-col  bg-[#fff] group fixed bottom-0 top-0 left-0 transition-all duration-300 w-[270px] mr-10 "
+    >
+    
+    <!-- all icons are here -->
+<div class="">
+     <p class="mt-5 group-hover:flex hidden text-[#475569] font-[500] ">ECHO</p>
+     
+</div>
+
+
+
+</div>
   </div>
 </template>
 

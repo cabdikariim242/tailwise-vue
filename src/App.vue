@@ -1,7 +1,8 @@
 <template>
     <div class="flex bg-[#f1f4f8]">
-    <sidebar/>
-    <navbar/>
+      <navbar :isopen="isopen" @toggle-this="toggle" />
+     <sidebar :isopen="isopen" @toggle-this="toggle" />
+    
   </div>
 </template>
 
@@ -13,6 +14,12 @@ import navbar from './components/navbar.vue'
 export default {
   components:
    {sidebar, navbar},
+
+    methods: {
+  toggle(value) {
+    this.isopen = value
+  }
+}
 
 };
 
