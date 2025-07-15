@@ -10,8 +10,9 @@
         :class="[
         'transition-colors duration-300',
         isScrollingUp ? 'bg-[#1b4b76]' : 'bg-[#051662] px-3 transtiton-all duration-300',
+        isScrollingUp ? 'bg-[#1b4b76]' : 'bg-[#051662] ml-10',
       ]"
-    class="  flex justify-between items-center   fixed top-5 left-[130px]  right-5 rounded-lg h-[60px]">
+    class="  flex justify-between items-center   fixed top-5 left-[115px]  right-5 rounded-lg h-[60px]">
     
     <div class="container-1 ml-3">
       <router-link to="/" class="mr-1 text-[#eff1f1] font-light">
