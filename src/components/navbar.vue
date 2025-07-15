@@ -13,6 +13,9 @@
         isScrollingUp ? 'bg-[#1b4b76]' : 'bg-[#051662] ml-10',
       ]"
     class="  flex justify-between items-center   fixed top-5 left-[115px]  right-5 rounded-lg h-[60px]">
+        isScrollingUp ? 'bg-[#1b4b76]' : 'bg-[#051662]',
+      ]"
+    class="  flex justify-between items-center   fixed top-5 left-[130px]  right-5 rounded-lg h-[60px]">
     
     <div class="container-1 ml-3">
       <router-link to="/" class="mr-1 text-[#eff1f1] font-light">
