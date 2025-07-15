@@ -9,7 +9,7 @@
      <div
         :class="[
         'transition-colors duration-300',
-        isScrollingUp ? 'bg-[#1b4b76]' : 'bg-[#051662]',
+        isScrollingUp ? 'bg-[#1b4b76]' : 'bg-[#051662] px-3 transtiton-all duration-300',
       ]"
     class="  flex justify-between items-center   fixed top-5 left-[130px]  right-5 rounded-lg h-[60px]">
     
