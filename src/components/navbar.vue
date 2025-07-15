@@ -1,21 +1,22 @@
 <template>
-  <div class="">
+  <div class="navbar">
     <div class="absolute top-0 left-0 right-0 h-[300px]"
       :class="[
         'transition-colors duration-300',
         isScrollingUp ? 'bg-[#1b4b76]' : 'bg-white',
       ]"
     >
-    <div
+     <div
         :class="[
         'transition-colors duration-300',
-        isScrollingUp ? 'bg-[#1b4b76]' : 'bg-[#051662] ml-10',
+        isScrollingUp ? 'bg-[#1b4b76]' : 'bg-[#051662]',
       ]"
-    class="text-center fixed top-5 left-[115px]  right-5 rounded-lg h-[60px]  font-bold  text-white text-[20px]">
+    class="text-center fixed top-5 left-[130px]  right-5 rounded-lg h-[60px]  font-bold  text-white text-[20px]">
         <p>this is a test</p>
     </div>
     </div>
   </div>
+
 </template>
 
 <script>
