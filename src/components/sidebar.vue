@@ -10,6 +10,15 @@
     <p class="mt-5 group-hover:flex hidden text-[#475569] font-[500] ">ECHO</p>
 </div>
 
+<div class="ml-10">
+  <p class="mt-5 group-hover:flex hidden text-[#475569] font-[500] ">DASHBOARD</p>
+  <p class="mt-5 group-hover:hidden flex  text-[#475569] font-[500] ">...</p>
+</div>
+<div class="flex  ">
+    <i class="fa-brands fa-stackpath text-[35px] pl-5 pr-3 pt-3 text-5 transition-transform duration-50 rounded-full group-hover:rotate-[360deg]  "></i>
+    <p class="mt-5 group-hover:flex hidden text-[#475569] font-[500] ">ECHO</p>
+</div>
+
 
 
 </div>
