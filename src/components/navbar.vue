@@ -18,13 +18,15 @@
       >
         
 
-    <div class="flex lg:hidden md:hidden">
+    <div class="flex lg:hidden md:hidden sm:hidden">
         <i @click="$emit('toggle-this', !isopen)" class="fa-solid fa-bars text-[25px] text-white p-[28px]"></i>
+
+        <i class="fa-solid fa-magnifying-glass mt-8 text-white text-[18px]"></i>
 
     </div>
 
 
-        <div class="container-1 ml-3 hidden lg:flex md:hidden">
+        <div class="container-1 ml-3 hidden lg:flex md:flex">
           <router-link to="/" class="mr-1 text-[#eff1f1] font-light">
             App
             <i
@@ -43,7 +45,7 @@
         </div>
 
         <div
-          class="container-2  items-center w-[320px] px-4 py-2 rounded-lg bg-white/20 hidden lg:flex md:flex sm:flex"
+          class="container-2  items-center w-[320px] px-4 py-2 rounded-lg bg-white/20 hidden lg:flex md:flex: sm:flex"
         >
           <!-- Icon -->
           <i
