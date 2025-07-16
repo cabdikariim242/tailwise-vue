@@ -55,7 +55,7 @@
         class="mx-2 rounded-lg mt-10 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center ">
-          <i class="fa-solid fa-gauge-high text-[20px]"></i>
+          <i class="fa-solid fa-gauge-high text-[20px] text-[#4b93b1]"></i>
           <p
             v-if="!toggle"
             class="group-hover:flex text-[15px] hidden text-[#465569] font-[500]"
@@ -74,7 +74,7 @@
         class="mx-2 rounded-lg mt-10 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
-          <i class="fa-duotone fa-solid fa-chart-line text-[20px]"></i>
+          <i class="fa-duotone fa-solid fa-chart-line text-[20px] text-[#4b93b1]"></i>
           <p
             v-if="!toggle"
             class="group-hover:flex text-[15px] hidden text-[#465569] font-[500]"
@@ -92,7 +92,7 @@
         class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
-          <i class="fa-solid fa-book-bookmark text-[20px]"></i>
+          <i class="fa-solid fa-book-bookmark text-[20px] text-[#4b93b1]"></i>
           <p
             v-if="!toggle"
             class="group-hover:flex text-[15px] hidden text-[#465569] font-[500]"
@@ -110,7 +110,7 @@
         class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
-          <i class="fa-solid fa-file"></i>
+          <i class="fa-solid fa-file  text-[20px] text-[#4b93b1]"></i>
           <p
             v-if="!toggle"
             class="group-hover:flex text-[15px] hidden text-[#465569] font-[500]"
@@ -129,7 +129,7 @@
         class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
-          <i class="fa-solid fa-hard-drive"></i>
+          <i class="fa-solid fa-hard-drive text-[#4b93b1]"></i>
           <p
             v-if="!toggle"
             class="group-hover:flex text-[15px] hidden text-[#465569] font-[500]"
@@ -143,24 +143,128 @@
       </router-link>
      </div>
 
-     <div
-      v-if="isopen"
+   <div 
+    v-if="isopen"
+      class="w-[300px]
+     flex lg:hidden md:hidden  flex-col bg-[#f3f5f8] group fixed bottom-0 top-0 left-0 transition-all duration-300 
+        "
       style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6)"
-      class="lg:hidden md:hidden flex flex-col bg-[#fff] group fixed bottom-0 top-0 left-0 transition-all duration-300 w-[270px] mr-10"
      >
-     
-      <div class="">
-        <i
+      <!-- all icons are here -->
+      <div class="flex justify-between items-center">
+        <div class="flex">
+          <i 
+            class="fa-brands fa-stackpath text-[35px] pl-6 pr-3 pt-3 text-5  rounded-full "
+          ></i>
+          <p
+            
+            class="mt-5  text-[#465569] font-[500]"
+          >
+            ECHO
+          </p>
+        </div>
+        <div class="mr-2">
+         <i
           @click="$emit('toggle-this', !isopen)"
-          class="fa-solid fa-xmark text-[20px] pr-4 mt-2 p-1 flex lg:hidden md:hidden"
+          class="fa-solid fa-xmark text-[20px] text-[#4b93b1] pr-4 mt-2 p-1 flex lg:hidden md:hidden"
         ></i>
-
-        
+        </div>
       </div>
 
-      
+      <div class="ml-8">
+        <p
+         
+          class="mt-5  text-[#c6d0e0] text-[15px] font-[500]"
+        >
+          DASHBOARD
+        </p>
+      </div>
 
+      <!-- content -->
+      <router-link
+        to="/"
+        class="mx-2 rounded-lg mt-10 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+      >
+        <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center ">
+          <i class="fa-solid fa-gauge-high text-[20px]  text-[#4b93b1]"></i>
+          <p
+        
+            class=" text-[15px]  text-[#465569] font-[500]"
+          >
+            E-ECOMERCE
+          </p>
+          
+        </div>
+      </router-link>
+
+      <router-link
+        to="/about"
+      
+        class="mx-2 rounded-lg mt-10 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+      >
+        <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
+          <i class="fa-duotone fa-solid fa-chart-line text-[20px] text-[#4b93b1]"></i>
+          <p
+        
+            class=" text-[15px] 
+             text-[#465569] font-[500]"
+          >
+           CRM
+          </p>
+          
+        </div>
+      </router-link>
+
+      <router-link
+        :to="{name:'hospital'}"
+        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+      >
+        <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
+          <i class="fa-solid fa-book-bookmark text-[20px] text-[#4b93b1]"></i>
+          <p
+        
+            class=" text-[15px]  text-[#465569] font-[500]"
+          >
+           Hospital
+          </p>
+          
+        </div>
+      </router-link>
+
+      <router-link
+        :to="{name:'factory'}"
+        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+      >
+        <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
+          <i class="fa-solid fa-file text-[20px] text-[#4b93b1]"></i>
+          <p
+        
+            class=" text-[15px]  text-[#465569] font-[500]"
+          >
+            Factory
+          </p>
+          
+        </div>
+      </router-link>
+
+
+      <router-link
+        :to="{ name: 'banking' }"
+        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+      >
+        <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
+          <i class="fa-solid fa-hard-drive text-[#4b93b1]"></i>
+          <p
+            class=" text-[15px]  text-[#465569] font-[500]"
+          >
+           Banking
+          </p>
+        
+        </div>
+      </router-link>
      </div>
+
+     
       
   </div>
 </template>
