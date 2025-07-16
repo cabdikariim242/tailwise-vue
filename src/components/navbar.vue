@@ -18,13 +18,13 @@
       >
         
 
-    <div class="flex lg:hidden md:hidden ">
-        <i @click="$emit('toggle-this', !isopen)" class="fa-solid fa-bars text-[25px] p-[28px]"></i>
+    <div class="flex lg:hidden md:hidden">
+        <i @click="$emit('toggle-this', !isopen)" class="fa-solid fa-bars text-[25px] text-white p-[28px]"></i>
 
     </div>
 
 
-        <div class="container-1 ml-3 hidden lg:flex md:flex">
+        <div class="container-1 ml-3 hidden lg:flex md:hidden">
           <router-link to="/" class="mr-1 text-[#eff1f1] font-light">
             App
             <i
