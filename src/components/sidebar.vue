@@ -8,46 +8,13 @@
      'phone:hidden flex flex-col bg-[#f3f5f8] group fixed bottom-3 top-0 left-3 transition-all duration-300 mr-10 mt-5 rounded-lg'
         ]"
       style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6)"
-     >
-      <!-- all icons are here -->
-      <div class="flex justify-between items-center">
-        <div class="flex">
-          <i 
-            class="fa-brands fa-stackpath text-[35px] pl-6 pr-3 pt-3 text-5 transition-transform duration-50 rounded-full group-hover:rotate-[360deg]"
-          ></i>
-          <p
-            v-if="!toggle"
-            class="mt-5 group-hover:flex hidden text-[#465569] font-[500]"
-          >
-            ECHO
-          </p>
-          <p v-if="toggle" class="mt-5 text-[#465569] font-[500]">ECHO</p>
-        </div>
-        <div class="mr-2">
-          <i
-            @click="togglesidebar"
-            class="fa-solid fa-arrow-right transition-transform duration-5 group-hover:rotate-[180deg] text-[#f3f5f8] group-hover:text-[gray]"
-          ></i>
-        </div>
-      </div>
-
-      <div class="ml-8">
-        <p
-          v-if="!toggle"
-          class="mt-5 group-hover:flex hidden text-[#c6d0e0] text-[15px] font-[500]"
-        >
-          DASHBOARD
-        </p>
-        <p
-          v-if="!toggle"
-          class="mt-5 group-hover:hidden flex text-[#8d98aa] font-[500]"
-        >
-          ...
-        </p>
-        <p v-if="toggle" class="mt-5 text-[#c6d0e0] text-[15px] font-[500]">
-          DASHBOARD
-        </p>
-      </div>
+      class="hidden  lg:flex md:flex flex-col  bg-[#fff] group fixed bottom-3 top-0 left-3 transition-all duration-300 hover:w-[300px] w-[80px] mr-10 mt-5 rounded-lg"
+    >
+    <!-- all icons are here -->
+<div class="flex  ">
+    <i class="fa-brands fa-stackpath text-[35px] pl-5 pr-3 pt-3 text-5 transition-transform duration-50 rounded-full group-hover:rotate-[360deg]  "></i>
+    <p class="mt-5 group-hover:flex hidden text-[#475569] font-[500] ">ECHO</p>
+</div>
 
       <!-- content -->
       <router-link

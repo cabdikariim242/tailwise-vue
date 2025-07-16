@@ -2,7 +2,6 @@
     <div class="flex bg-[#f1f4f8]">
       <navbar :isopen="isopen" @toggle-this="toggle" />
      <sidebar :isopen="isopen" @toggle-this="toggle" />
-    <router-view/>
   </div>
 </template>
 
