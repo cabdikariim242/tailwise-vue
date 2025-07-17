@@ -34,64 +34,50 @@
 </template>
 
 <script>
-import {
-  Chart as ChartJS,
-  Title,
-  Tooltip,
-  Legend,
-  LineElement,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  Filler,
-} from 'chart.js'
-import { Line } from 'vue-chartjs'
-
-ChartJS.register(Title, Tooltip, Legend, LineElement, CategoryScale, LinearScale, PointElement, Filler)
+import { onMounted } from 'vue';
+import { Chart, registerables } from 'chart.js';
+Chart.register(...registerables);
 
 export default {
   name: 'HomeView',
-  components: { Line },
-  data() {
-    return {
-      chartData: {
-        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-        datasets: [
-          {
-            label: 'Products Sold',
-            data: [10, 20, 18, 30, 28, 40, 41],
-            backgroundColor: 'rgba(30, 58, 138, 0.2)',
-            borderColor: '#1e3a8a',
-            tension: 0.4,
-            fill: true,
-            pointRadius: 0,
-          },
-          {
-            label: 'Store Locations',
-            data: [-12, 22, 15, 27, 25, 35, 30],
-            backgroundColor: 'rgba(203, 213, 225, 0.2)',
-            borderColor: '#cbd5e1',
-            tension: 0.4,
-            fill: true,
-            pointRadius: 0,
-            borderDash: [5, 5],
-          },
-        ],
-      },
-      chartOptions: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: {
-            display: false,
-          },
+  setup() {
+    onMounted(() => {
+      const ctx = document.getElementById('admissionChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29'],
+          datasets: [
+            {
+              label: 'Patient Admissions Over Time',
+              data: [370, 580, 950, 1000, 800, 670, 100, 230, 910, 880, 980, 300, 740, 930, 680],
+              backgroundColor: '#63b3ed',
+            },
+            {
+              label: 'Bed Occupancy Rate Over Time',
+              data: [310, 260, 140, 120, 630, 700, 220, 240, 480, 430, 890, 420, 130, 940, 530],
+              backgroundColor: '#81e6d9',
+            }
+          ]
         },
-        scales: {
-          x: { display: false },
-          y: { display: false },
-        },
-      },
-    }
-  },
+        options: {
+          responsive: true,
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 1000,
+              ticks: {
+                stepSize: 200,
+              }
+            }
+          }
+        }
+      });
+    });
+  }
 }
 </script>
+
+<style scoped>
+/* Optional custom styles */
+</style>
