@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar ">
+  <div class="navbar " >
     <div
       class="absolute top-0 left-0 right-0 h-[300px]"
       :class="[
@@ -9,12 +9,12 @@
     >
       <div
         :class="[
-          'transition-colors duration-300',
+           'transition-colors duration-300',
           isScrollingUp
             ? 'bg-[#1b4b76]'
             : 'bg-[#051662] px-3 transtiton-all duration-300',
         ]"
-        class="flex justify-between items-center fixed top-5 lg:left-[115px] left-[5px] md:left-[115px] right-5 rounded-lg h-[60px]"
+        class=" z-[9] flex justify-between items-center fixed top-5 lg:left-[115px] left-[5px] md:left-[115px] right-5 rounded-lg h-[60px]"
       >
         
 
@@ -104,6 +104,7 @@ export default {
   beforeDestroy() {
     window.removeEventListener("scroll", this.handleScroll);
   },
+   
 };
 </script>
 
