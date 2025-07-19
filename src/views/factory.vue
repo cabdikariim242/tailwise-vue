@@ -40,10 +40,7 @@
       </div>
         <button class="border border-gray-300 rounded px-3 py-1 text-sm text-gray-700">19 Jul, 2025 - 19 Aug, 2025</button>
       </div>
-      <div class="flex gap-3 text-sm text-blue-600 font-medium">
-        <button class="hover:underline">Export to PDF</button>
-        <button class="hover:underline">Show full report</button>
-      </div>
+      
     </div>
 
 <canvas ref="chartCanvas" class="w-full h-96"></canvas>
@@ -115,69 +112,32 @@
 
       
    </div>
+       <div class="bg-white shadow-lg rounded-2xl p-6 absolute lg:top-0 md:top-0 top-[250px] left-0 right-0  mt-[370px] lg:mt-[600px] md:mt-[200px] ml-[10px] lg:ml-[960px] md:ml-[700px] mr-[10px]   z-0">
+        <!-- Header -->
+        <h2 
+        class="text-black lg:text-black md:text-white  mt-[-70px] mb-[40px] capitalize text-lg  bg font-semibold "
+        
+        >patient overview </h2>
+      
+          
+        
+        <!-- Categories -->
+        <div class="grid grid-cols-2 gap-y-4 text-sm text-gray-700 mb-4">
+          
+        <!-- Footer Button -->
+        
+        
+  
+        
+     </div>
+  </div>
 
   
 </template>
 
- <script setup>
-import { ref, onMounted } from 'vue'
-import { Chart, registerables } from 'chart.js'
-      const dateFilter  = 'daily'
-      const dateCustom   = 'custom'
-// Register Chart.js components
-Chart.register(...registerables)
-
-const chartCanvas = ref(null)
-
-onMounted(() => {
-  const ctx = chartCanvas.value.getContext('2d')
-
-  const chart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29'],
-      datasets: [
-        {
-          label: 'Patient Admissions Over Time',
-          data: [950, 230, 680, 750, 980, 870, 920, 980, 720, 680, 630, 550, 330, 980, 400],
-          backgroundColor: 'rgba(56, 189, 248, 0.7)', // sky-400
-        },
-        {
-          label: 'Bed Occupancy Rate Over Time',
-          data: [880, 150, 590, 690, 800, 730, 810, 910, 680, 600, 420, 410, 260, 930, 530],
-          backgroundColor: 'rgba(167, 139, 250, 0.7)', // violet-400
-        }
-      ]
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: {
-          position: 'bottom',
-          labels: {
-            boxWidth: 12,
-            padding: 15
-          }
-        },
-        title: {
-          display: false
-        }
-      },
-      scales: {
-        x: {
-          grid: {
-            display: false
-          }
-        },
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
-  })
+ <script >
 
 
-})
 </script>
 
 
