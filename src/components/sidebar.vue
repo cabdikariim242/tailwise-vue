@@ -13,7 +13,7 @@
       <div class="flex justify-between items-center">
         <div class="flex">
           <i 
-            class="fa-brands fa-stackpath text-[35px] pl-6 pr-3 pt-3 text-5 transition-transform duration-50 rounded-full group-hover:rotate-[360deg]"
+            class="fa-brands fa-stackpath text-[35px] text-[#206c93] pl-6 pr-3 pt-3 text-5 transition-transform duration-50 rounded-full group-hover:rotate-[360deg]"
           ></i>
           <p
             v-if="!toggle"
@@ -154,7 +154,7 @@
       <div class="flex justify-between items-center">
         <div class="flex">
           <i 
-            class="fa-brands fa-stackpath text-[35px] pl-6 pr-3 pt-3 text-5  rounded-full "
+            class="fa-brands fa-stackpath text-[#206c93] text-[35px] pl-6 pr-3 pt-3 text-5  rounded-full "
           ></i>
           <p
             

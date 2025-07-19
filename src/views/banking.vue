@@ -213,7 +213,7 @@
 </template>
 
 <script>
-import {
+  import {
   Chart,
   LineController,
   LineElement,
