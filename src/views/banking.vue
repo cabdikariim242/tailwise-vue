@@ -1,5 +1,179 @@
 <template>
-  <div class="absolute top-[300px] left-[100px] right-20 bottom-20 bg-white text-black">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, provident laborum ab neque iste facilis. Aliquam enim similique nisi natus. Possimus cum laudantium laborum, quod rem tenetur nam eum a explicabo recusandae numquam dolorem optio molestias aperiam saepe beatae alias repellat odio ratione. Aut unde error ullam maxime possimus voluptas, deserunt eaque dolores quidem rerum voluptates itaque molestias soluta consequuntur cum laboriosam non inventore corporis ad! Assumenda aliquam numquam rem. Quam doloribus minus fugiat porro maxime blanditiis laudantium dolorem eos. Repellendus, saepe velit et facilis sit quia repellat molestias deleniti porro praesentium? Doloremque modi asperiores repudiandae error, nam in quidem ipsa sint cumque rerum exercitationem deserunt, perferendis saepe harum ipsam soluta odio nostrum? Dolores, sint ut voluptates, nisi labore repudiandae dolorem explicabo maxime ad voluptas, libero enim! Deserunt iure eos sequi provident nulla ratione eveniet accusantium rem, modi velit? Odit accusantium consequuntur, molestias quibusdam fuga fugiat adipisci vel porro ipsam similique quae voluptate, nesciunt consectetur itaque eaque ullam tempore. Cumque, dignissimos velit illum a molestiae, soluta provident magnam, illo inventore nostrum sint non earum dolore? Tempore quae labore, ea porro iure cupiditate fuga optio. Itaque distinctio necessitatibus aliquam optio explicabo sit labore corrupti aut! Voluptate, ex dignissimos esse nobis blanditiis quidem nisi! Non, eius debitis exercitationem neque nostrum libero aliquam error beatae possimus iure perspiciatis a quasi recusandae atque fuga porro quos minima velit distinctio commodi molestiae facilis! Tempore beatae ipsum quibusdam maiores. Provident, exercitationem incidunt quae dicta quidem laborum sint officia ex cumque facilis, fuga eligendi earum, a amet libero quibusdam hic dolores neque quod nostrum! Voluptatum repellendus repudiandae delectus distinctio fuga eaque, laboriosam suscipit ex quos praesentium! Maiores culpa velit iure fugiat ipsum repudiandae ex? Non reiciendis expedita nulla minima eligendi temporibus nihil quae eius cupiditate id quos ea saepe labore beatae, quod exercitationem neque nam deserunt veniam modi facere! Soluta repellat quibusdam nam at eveniet dolor error minus placeat sed maiores molestias libero distinctio saepe, cupiditate tempore eius mollitia adipisci? Animi provident reprehenderit voluptate nostrum non, magnam dicta sint eos in cumque veritatis harum impedit porro? Sunt voluptates quidem provident, molestiae fugiat ab soluta consequatur ut eos, neque enim perferendis odio quia. Magnam id consectetur est quos? Voluptas cupiditate nulla facilis hic cum tempora, exercitationem facere quia suscipit odio ipsam rem numquam corporis? Animi, molestias dignissimos? Eveniet architecto nisi veniam, nesciunt nulla amet, dolore autem expedita exercitationem ipsum a doloribus, neque perferendis inventore doloremque. Quibusdam vero fugiat eos quos, officiis ipsam? Quidem aspernatur dolore inventore adipisci amet! Aspernatur, minima molestias. Quis voluptas, molestias illum, in earum accusantium deleniti ipsum sequi quibusdam dolorum architecto, aperiam optio repellat! Eum quos, labore autem soluta animi nulla quo voluptatem. Fugit nobis modi dignissimos commodi porro necessitatibus quibusdam. Totam sed architecto perferendis dignissimos quam dolorum facilis, voluptas iusto. Reiciendis, voluptatibus libero sint architecto aliquam illo aperiam recusandae sequi voluptas quo ut iste. Odio ad corporis nostrum eveniet magnam facilis qui dolores labore est suscipit. Nesciunt consequuntur quae culpa deleniti voluptates nobis pariatur quasi numquam temporibus atque obcaecati iusto quia labore neque recusandae maiores, non tempore necessitatibus, quidem nostrum laborum adipisci accusamus at! Necessitatibus quod perferendis tempore porro, unde rerum. Sunt odio blanditiis quibusdam vel tenetur non optio nisi maxime aperiam et, suscipit molestias nam amet porro. Corporis nam temporibus eius quae qui deserunt necessitatibus consectetur non ea consequatur enim quia provident expedita adipisci fugiat, cumque tempore, earum laborum inventore eveniet voluptates ratione. Amet consequuntur impedit commodi animi, quaerat iure, soluta, excepturi nostrum labore consectetur dolorum. Neque repellendus vero aliquid illum impedit consectetur omnis cumque at autem provident eligendi, similique libero nihil quae tenetur deserunt, sequi, error aliquam iusto temporibus voluptatibus amet? Hic dicta architecto nesciunt nam non, autem reprehenderit, veniam voluptatibus earum aliquid perferendis delectus blanditiis placeat nulla et laboriosam ipsam dignissimos impedit adipisci atque sapiente repudiandae aliquam consectetur ipsum! Corporis deleniti voluptatibus autem sint, dolorem adipisci accusamus maiores aut, ut facilis voluptatem velit perspiciatis ipsum rerum eveniet esse maxime doloribus nostrum placeat libero officia minus optio! Ab veniam expedita harum impedit sint iure, earum molestias officiis recusandae unde quos velit minus, inventore qui illum tempora facere pariatur quasi ex temporibus. Autem error nihil asperiores eaque illo. Vitae repellat, rerum reiciendis alias, unde accusantium voluptatem veniam quidem assumenda corrupti illum. Natus temporibus molestiae veniam error vel ipsum corrupti excepturi consequatur, atque eligendi quod illo ad obcaecati illum doloremque nemo aliquid saepe deserunt expedita assumenda animi laboriosam. Reprehenderit amet laborum adipisci vel nam eos accusantium asperiores earum, eveniet praesentium autem labore necessitatibus excepturi voluptate dolorum ut eligendi distinctio, nobis atque iste fugit rem. Quae consequatur magni reiciendis molestiae, hic dolorem? Recusandae dicta eius inventore temporibus tempora expedita, blanditiis quis veritatis neque fugit, cupiditate ab. Perspiciatis cum provident quia. Magnam libero enim temporibus facere quod dicta veritatis quia totam illum, a sapiente possimus rerum aperiam dolorum repellendus animi mollitia excepturi accusantium explicabo delectus vel quidem aliquam! Molestias facilis natus, libero corrupti, error accusantium laborum assumenda doloribus quae soluta id quo eaque. At eveniet numquam delectus est asperiores in cum consequuntur corporis temporibus cumque eius laudantium quasi nihil minus corrupti aperiam, itaque repellat quis quaerat! Beatae vero saepe reiciendis. Veniam, laborum. Commodi nesciunt distinctio culpa illo atque quaerat veniam omnis consectetur, nisi magni, quibusdam cum soluta vel impedit numquam quod quos, reiciendis iste a et neque sit dicta repellat. Atque, eum corporis cupiditate maxime nostrum doloremque, eius modi ipsum vero blanditiis distinctio libero? Repellendus enim a quam totam debitis, necessitatibus, perferendis ullam autem veniam minima neque nisi illo voluptatum exercitationem beatae doloremque sed ratione iure sunt repudiandae commodi. Aspernatur voluptates rerum sunt! Ducimus a suscipit odit error incidunt molestias quis consectetur animi, voluptatem hic rerum odio laboriosam, pariatur repudiandae illum aliquam obcaecati fuga ratione veritatis voluptate sapiente. Voluptas eaque numquam nam. Explicabo tempora corrupti facilis et, consequatur atque earum vitae quaerat nesciunt minima nisi eum reprehenderit consequuntur corporis magnam! Placeat vero officia est commodi perferendis maiores. Nobis harum cupiditate, reprehenderit pariatur consequatur saepe. Praesentium beatae officia tempora nesciunt cupiditate tenetur nobis recusandae est corrupti cumque, vero neque mollitia in sint, animi eligendi voluptatem ipsa sapiente?    </p>
+  <div class="mt-10">
+    <!-- First Box -->
+    <div
+      :class="[
+        'transition-colors duration-300',
+        isScrollingUp ? 'top-0' : 'top-[-20px]',
+      ]"
+      class="top-0 left-0 right-0 h-[280px] mt-[200px] mb-[50px] ml-[10px] lg:ml-[116px] md:ml-[130px] lg:mr-[600px] md:mr-[450px] mr-[10px] bg-gradient-to-b from-[#1e3a8a] to-[#312e81] text-white rounded-xl shadow-lg p-6 absolute overflow-hidden border-4 border-white"
+    >
+      <div class="flex items-center gap-2 mb-4">
+        <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+        <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+        <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+      </div>
+      <div>
+        <h2 class="text-2xl font-semibold">New feature<br />unlocked!</h2>
+        <p class="text-sm text-white/80 mt-2">Boost your performance!</p>
+      </div>
+      <a href="#" class="mt-6 inline-block text-sm font-medium text-white hover:underline">
+        Upgrade now →
+      </a>
+      <div class="absolute top-4 right-4 w-16 h-16 border-2 border-white/20 rounded-full"></div>
+    </div>
+
+    <!-- Chart Box 1 -->
+    <div
+      :class="[
+        'transition-colors duration-300',
+        isScrollingUp ? 'lg:top-0' : 'lg:top-[-20px]',
+      ]"
+      class="lg:top-0 md:top-0 top-[250px] left-0 right-0 h-[280px] mt-[260px] lg:mt-[200px] md:mt-[200px] ml-[10px] lg:ml-[760px] md:ml-[500px] mr-[10px] bg-white text-gray-800 rounded-xl shadow-lg p-6 absolute overflow-hidden border"
+    >
+      <div class="flex items-center gap-4 mb-4">
+        <div class="w-10 h-10 rounded-full bg-[#f3f4f6] flex items-center justify-center">
+          <i class="fa-solid fa-database text-[#1e3a8a]"></i>
+        </div>
+        <div>
+          <h2 class="text-lg font-semibold">41k Products Sold</h2>
+          <p class="text-sm text-gray-500">Across 21 stores</p>
+        </div>
+        <div class="ml-auto">
+          <i class="fa-solid fa-ellipsis-vertical text-gray-400"></i>
+        </div>
+      </div>
+
+      <div class="w-full h-[100px]">
+        <canvas ref="salesChart1"></canvas>
+      </div>
+
+      <div class="flex justify-center gap-6 mt-4 text-sm text-gray-600">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-[#1e3a8a]"></span>
+          <span>Products Sold</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-[#cbd5e1]"></span>
+          <span>Store Locations</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chart Box 2 -->
+    <div
+      :class="[
+        'transition-colors duration-300',
+        isScrollingUp ? 'lg:top-0' : 'lg:top-[-20px]',
+      ]"
+      class="top-0 left-0 right-0 h-[280px] lg:mt-[550px] md:mt-[550px] mt-[820px] mb-[50px] ml-[10px] lg:ml-[116px] md:ml-[130px] lg:mr-[600px] md:mr-[450px] mr-[10px] bg-white text-gray-800 rounded-xl shadow-lg p-6 absolute overflow-hidden border"
+    >
+      <!-- ... same header ... -->
+      <div class="w-full h-[100px]">
+        <canvas ref="salesChart2"></canvas>
+      </div>
+      <!-- ... same legend ... -->
+    </div>
+
+    <!-- Chart Box 3 -->
+    <div
+      :class="[
+        'transition-colors duration-300',
+        isScrollingUp ? 'lg:top-0' : 'lg:top-[-20px]',
+      ]"
+      class="lg:top-0 md:top-0 top-[250px] left-0 right-0 h-[280px] mt-[880px] lg:mt-[550px] md:mt-[550px] ml-[10px] lg:ml-[760px] md:ml-[500px] mr-[10px] bg-white text-gray-800 rounded-xl shadow-lg p-6 absolute overflow-hidden border"
+    >
+      <!-- ... same header ... -->
+      <div class="w-full h-[100px]">
+        <canvas ref="salesChart3"></canvas>
+      </div>
+      <!-- ... same legend ... -->
+    </div>
   </div>
 </template>
+
+<script>
+import {
+  Chart,
+  LineController,
+  LineElement,
+  PointElement,
+  LinearScale,
+  Title,
+  CategoryScale,
+  Filler,
+} from 'chart.js';
+
+Chart.register(LineController, LineElement, PointElement, LinearScale, Title, CategoryScale, Filler);
+
+export default {
+  name: 'HomeView',
+  data() {
+    return {
+      dateFilter: 'custom',
+      isScrollingUp: true,
+      lastScrollY: window.scrollY,
+    };
+  },
+  methods: {
+    handleScroll() {
+      const currentScrollY = window.scrollY;
+      this.isScrollingUp = currentScrollY < this.lastScrollY;
+      this.lastScrollY = currentScrollY;
+    },
+    initChart(refName) {
+      const ctx = this.$refs[refName];
+      if (!ctx) return;
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+          datasets: [
+            {
+              label: 'Products Sold',
+              data: [-100, 209, -300, 5000, -608, 8000, -990],
+              borderColor: '#1e3a8a',
+              backgroundColor: 'rgba(30, 58, 138, 0.1)',
+              fill: true,
+              tension: 0.4,
+              pointRadius: 0,
+              borderWidth: 2,
+            },
+            {
+              label: 'Store Locations',
+              data: [8, 18, 25, 40, 45, 60, 70],
+              borderColor: '#cbd5e1',
+              backgroundColor: 'rgba(203, 213, 225, 0.1)',
+              fill: true,
+              borderDash: [5, 5],
+              tension: 0.4,
+              pointRadius: 0,
+              borderWidth: 2,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+          },
+          scales: {
+            x: { display: false },
+            y: { display: false },
+          },
+        },
+      });
+    },
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+    this.initChart('salesChart1');
+    this.initChart('salesChart2');
+    this.initChart('salesChart3');
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+};
+</script>
