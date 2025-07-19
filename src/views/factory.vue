@@ -73,46 +73,16 @@
         </select>
         </div>
       </div>
-      <!-- Condition Distribution Bar -->
-      <div class="w-full h-2 rounded-full overflow-hidden flex mb-5">
-        <div class="bg-violet-500 w-[30%]"></div>
-        <div class="bg-blue-500 w-[25%]"></div>
-        <div class="bg-orange-400 w-[10%]"></div>
-        <div class="bg-teal-400 w-[35%]"></div>
-      </div>
-      <!-- Categories -->
-      <div class="grid grid-cols-2 gap-y-4 text-sm text-gray-700 mb-4">
-        <div>
-          <p class="font-medium">Heart Disease</p>
-          <p class="text-lg font-semibold text-gray-900">2,974 <span class="text-green-600 text-sm">11% ↑</span></p>
-        </div>
-        <div>
-          <p class="font-medium truncate">Respiratory Issues</p>
-          <p class="text-lg font-semibold text-gray-900">2,556 <span class="text-green-600 text-sm">11% ↑</span></p>
-        </div>
-        <div>
-          <p class="font-medium">Diabetes</p>
-          <p class="text-lg font-semibold text-gray-900">1,696 <span class="text-green-600 text-sm">2% ↑</span></p>
-        </div>
-        <div>
-          <p class="font-medium">Other</p>
-          <p class="text-lg font-semibold text-gray-900">1,278 <span class="text-green-600 text-sm">2% ↑</span></p>
-        </div>
-      </div>
-      <!-- Footer Button -->
-      <button class="w-full mt-2 border border-gray-300 text-gray-700 text-sm py-2 rounded-md flex items-center justify-center gap-1 hover:bg-gray-50">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M8 16l4-4 4 4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        See Full Report
-      </button>
+     
+     
+     
       
 
       <!-- second one -->
 
       
    </div>
-       <div class="bg-white shadow-lg rounded-2xl p-6 absolute lg:top-0 md:top-0 top-[250px] left-0 right-0  mt-[370px] lg:mt-[600px] md:mt-[200px] ml-[10px] lg:ml-[960px] md:ml-[700px] mr-[10px]   z-0">
+       <div class="bg-white shadow-lg rounded-2xl p-6 absolute lg:top-0 md:top-0 top-[350px] left-0 right-0  mt-[470px] lg:mt-[600px] md:mt-[200px] ml-[10px] lg:ml-[960px] md:ml-[700px] mr-[10px]   z-0">
         <!-- Header -->
         <h2 
         class="text-black lg:text-black md:text-white  mt-[-70px] mb-[40px] capitalize text-lg  bg font-semibold "
@@ -136,7 +106,14 @@
 </template>
 
  <script >
-
+export default {
+  data (){
+    return{
+      dateFilter : 'daily',
+      dateCustom : 'custom',
+    }
+  }
+}
 
 </script>
 
