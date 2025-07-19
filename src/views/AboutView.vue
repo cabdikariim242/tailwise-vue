@@ -39,13 +39,13 @@
   </div>
 
 
-<div class=" bg-white z-0 mt-[200px] lg:ml-[110px] md:ml-[110px] ml-[10px] grid lg:grid-rows-5 md:grid-rows-4 sm:grid-rows-2 grid-rows-1 gap-2 p-4 justify-between rounded-lg border-e-red-50">
+<div class="bg-white z-0 mt-[200px] lg:ml-[110px] md:ml-[110px] ml-[10px] flex lg:flex-row  md:flex-wrap flex-wrap sm:flex-wrap gap-2 p-4  rounded-lg">
   <!-- Card 1 -->
-  <div class="bg-gradient-to-br from-[#1e3a8a] to-[#312e81] text-white rounded-xl p-4 shadow-md relative w-[280px]">
+  <div class="bg-gradient-to-br from-[#1e3a8a] to-[#312e81] text-white rounded-xl p-4 shadow-md relative lg:w-[280px] md:w-[280px] w-[450px] ">
     <div class="absolute top-2 right-2 text-white text-sm opacity-70">
       <i class="fa-solid fa-ellipsis-vertical"></i>
     </div>
-    <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center mb-4">
+    <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center mb-[60px] lg:mb-4 md:mb-4" >
       <i class="fa-solid fa-database text-white text-lg"></i>
     </div>
     <div class="flex items-center gap-4">
@@ -60,11 +60,11 @@
   </div>
 
   <!-- Card 2 -->
-  <div class="bg-white rounded-xl p-4 shadow-md relative border text-gray-800 w-[280px]">
+  <div class="bg-white rounded-xl p-4 shadow-md relative border text-gray-800 lg:w-[280px] md:w-[280px] w-[450px] ">
     <div class="absolute top-2 right-2 text-gray-400 text-sm">
       <i class="fa-solid fa-ellipsis-vertical"></i>
     </div>
-    <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mb-4">
+    <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mb-[60px] lg:mb-4 md:mb-4">
       <i class="fa-solid fa-box text-purple-600 text-lg"></i>
     </div>
     <div class="flex items-center gap-4">
@@ -78,11 +78,11 @@
   </div>
 
   <!-- Card 3 -->
-  <div class="bg-white rounded-xl p-4 shadow-md relative border text-gray-800 w-[280px]">
+  <div class="bg-white rounded-xl p-4 shadow-md relative border text-gray-800 lg:w-[280px] md:w-[280px] w-[450px] ">
     <div class="absolute top-2 right-2 text-gray-400 text-sm">
       <i class="fa-solid fa-ellipsis-vertical"></i>
     </div>
-    <div class="w-10 h-10 rounded-full bg-cyan-100 flex items-center justify-center mb-4">
+    <div class="w-10 h-10 rounded-full bg-cyan-100 flex items-center justify-center mb-[60px] lg:mb-4 md:mb-4">
       <i class="fa-solid fa-cube text-cyan-600 text-lg"></i>
     </div>
     <div class="flex items-center gap-4">
@@ -96,11 +96,12 @@
   </div>
 
   <!-- Card 4 -->
-  <div class="bg-white rounded-xl p-4 shadow-md relative border text-gray-800 w-[260px]">
+  <div class="bg-white rounded-xl p-4 shadow-md relative border text-gray-800 lg:w-[250px] md:w-[260px] w-[450px] ">
     <div class="absolute top-2 right-2 text-gray-400 text-sm">
       <i class="fa-solid fa-ellipsis-vertical"></i>
     </div>
-    <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mb-4">
+    
+    <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mb-[60px] lg:mb-4 md:mb-4">
       <i class="fa-solid fa-box-archive text-purple-600 text-lg"></i>
     </div>
     <div class="flex items-center gap-4">
