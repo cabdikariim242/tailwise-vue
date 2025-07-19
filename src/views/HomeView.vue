@@ -91,7 +91,7 @@
     <!-- Chart Placeholder -->
     <div class="w-full h-[100px]">
       <!-- Replace this with your actual chart component (e.g., Chart.js, ApexCharts, etc) -->
-      <canvas id="salesChart"></canvas>
+      <canvas id="chartSold"></canvas>
     </div>
 
     <!-- Legend -->
@@ -122,33 +122,33 @@
     <!-- Header -->
     <div class="flex items-center gap-4 mb-4">
       <div class="w-10 h-10 rounded-full bg-[#f3f4f6] flex items-center justify-center">
-        <i class="fa-solid fa-database text-[#1e3a8a]"></i>
+        <i class="fa-solid fa-copy text-gray-400"></i>
       </div>
       <div>
-        <h2 class="text-lg font-semibold">41k Products Sold</h2>
-        <p class="text-sm text-gray-500">Across 21 stores</p>
-        <p class="text-sm text-gray-500">Across 21 stores</p>
+        <h2 class="text-lg font-semibold">36k Products Shipped</h2>
+        <p class="text-sm text-gray-500">Across 14 warehouses</p>
       </div>
       <div class="ml-auto">
         <i class="fa-solid fa-ellipsis-vertical text-gray-400"></i>
+
       </div>
     </div>
 
     <!-- Chart Placeholder -->
     <div class="w-full h-[100px]">
       <!-- Replace this with your actual chart component (e.g., Chart.js, ApexCharts, etc) -->
-      <canvas id="salesChart"></canvas>
+      <canvas id="chartShipped"></canvas>
     </div>
 
     <!-- Legend -->
     <div class="flex justify-center gap-6 mt-4 text-sm text-gray-600">
       <div class="flex items-center gap-2">
         <span class="w-2 h-2 rounded-full bg-[#1e3a8a]"></span>
-        <span>Products Sold</span>
+        <span>Total Shipped</span>
       </div>
       <div class="flex items-center gap-2">
         <span class="w-2 h-2 rounded-full bg-[#cbd5e1]"></span>
-        <span>Store Locations</span>
+        <span>Warehouses</span>
       </div>
     </div>
   </div>
@@ -165,11 +165,11 @@
     <!-- Header -->
     <div class="flex items-center gap-4 mb-4">
       <div class="w-10 h-10 rounded-full bg-[#f3f4f6] flex items-center justify-center">
-        <i class="fa-solid fa-database text-[#1e3a8a]"></i>
+       <i class="fa-solid fa-bolt"></i>
       </div>
       <div>
-        <h2 class="text-lg font-semibold">41k Products Sold</h2>
-        <p class="text-sm text-gray-500">Across 21 stores</p>
+        <h2 class="text-lg font-semibold">3.7k Orders Processed</h2>
+        <p class="text-sm text-gray-500">Across 9 regions</p>
       </div>
       <div class="ml-auto">
         <i class="fa-solid fa-ellipsis-vertical text-gray-400"></i>
@@ -179,18 +179,18 @@
     <!-- Chart Placeholder -->
     <div class="w-full h-[100px]">
       <!-- Replace this with your actual chart component (e.g., Chart.js, ApexCharts, etc) -->
-      <canvas id="salesChart"></canvas>
+      <canvas id="chartOrdersProcessed"></canvas>
     </div>
 
     <!-- Legend -->
     <div class="flex justify-center gap-6 mt-4 text-sm text-gray-600">
       <div class="flex items-center gap-2">
         <span class="w-2 h-2 rounded-full bg-[#1e3a8a]"></span>
-        <span>Products Sold</span>
+        <span>Order Volume</span>
       </div>
       <div class="flex items-center gap-2">
-        <span class="w-2 h-2 rounded-full bg-[#cbd5e1]"></span>
-        <span>Store Locations</span>
+        <span class="w-2 h-2 rounded-full bg-[#cf0707]"></span>
+        <span>Coverage Area</span>
       </div>
     </div>
   </div>
@@ -199,7 +199,6 @@
 
     </div>
 
-  <!-- another_boxes -->
 
 
 </template>
@@ -214,7 +213,20 @@ import {
   Title,
   CategoryScale,
   Filler,
+  ArcElement
 } from 'chart.js';
+
+Chart.register(
+  LineController,
+  LineElement,
+  PointElement,
+  LinearScale,
+  Title,
+  CategoryScale,
+  Filler,
+  ArcElement
+);
+
 
 Chart.register(LineController, LineElement, PointElement, LinearScale, Title, CategoryScale, Filler);
 
@@ -240,64 +252,128 @@ export default {
       this.lastScrollY = currentScrollY;
     },
   },
-  mounted() {
-    window.addEventListener("scroll", this.handleScroll);
-  },
-  beforeDestroy() {
-    window.removeEventListener("scroll", this.handleScroll);
-  },
 
-   mounted() {
-    const ctx = document.getElementById('salesChart');
+
+  mounted() {
+  window.addEventListener("scroll", this.handleScroll);
+
+  const chartConfigs = [
+    {
+      id: "chartSold",
+      label1: "Products Sold",
+      data1: [-100, 2000, -3900, -9400, 9500, -7600, 9700],
+      color1: "#1e3a8a",
+      label2: "Store Locations",
+      data2: [10, 20, 30, 25, 40, 35, 50],
+      color2: "#cbd5e1"
+    },
+    {
+      id: "chartShipped",
+      label1: "Total Shipped",
+      data1: [-500, 3900, -9400, 9600, -5700, 580, -900],
+      color1: "#2dd4bf",
+      label2: "Warehouses",
+      data2: [8, 15, 20, 18, 25, 30, 35],
+      color2: "#cbd5e1"
+    },
+    {
+      id: "chartRevenue",
+      label1: "Revenue",
+      data1: [150, 250, 400, 550, 700, 900, 1000],
+      color1: "#16a34a",
+      label2: "Expenses",
+      data2: [50, 100, 200, 300, 400, 500, 600],
+      color2: "#fca5a5"
+    },
+    {
+      id: "chartReturns",
+      label1: "Returns",
+      data1: [10, 30, 25, 40, 50, 35, 20],
+      color1: "#f59e0b",
+      label2: "Complaints",
+      data2: [2, 5, 3, 6, 7, 4, 1],
+      color2: "#fcd34d"
+    }
+  ];
+
+  chartConfigs.forEach(({ id, label1, data1, color1, label2, data2, color2 }) => {
+    const ctx = document.getElementById(id);
     if (!ctx) return;
 
     new Chart(ctx, {
-      type: 'line',
+      type: "line",
       data: {
-        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+        labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
         datasets: [
           {
-            label: 'Products Sold',
-            data: [-100, 209, -300, 5000, -608, 8000, -990],
-            borderColor: '#1e3a8a',
-            backgroundColor: 'rgba(30, 58, 138, 0.1)',
+            label: label1,
+            data: data1,
+            borderColor: color1,
+            backgroundColor: color1 + "20",
             fill: true,
             tension: 0.4,
             pointRadius: 0,
-            borderWidth: 2,
+            borderWidth: 2
           },
           {
-            label: 'Store Locations',
-            data: [8, 18, 25, 40, 45, 60, 70],
-            borderColor: '#cbd5e1',
-            backgroundColor: 'rgba(203, 213, 225, 0.1)',
+            label: label2,
+            data: data2,
+            borderColor: color2,
+            backgroundColor: color2 + "20",
             fill: true,
             borderDash: [5, 5],
             tension: 0.4,
             pointRadius: 0,
-            borderWidth: 2,
-          },
-        ],
+            borderWidth: 2
+          }
+        ]
       },
       options: {
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
           legend: {
-            display: false,
-          },
+            display: false
+          }
         },
         scales: {
-          x: {
-            display: false,
-          },
-          y: {
-            display: false,
-          },
-        },
-      },
+          x: { display: false },
+          y: { display: false }
+        }
+      }
     });
-  },
+  });
+
+  // chartOrdersProcessed – Doughnut (Semi-circle)
+  const doughnutCtx = document.getElementById("chartOrdersProcessed");
+  if (doughnutCtx) {
+    new Chart(doughnutCtx, {
+      type: "doughnut",
+      data: {
+        labels: ["Order Volume", "Coverage Area"],
+        datasets: [
+          {
+            data: [80, 20],
+            backgroundColor: ["#64748b", "#f87171"],
+            borderWidth: 0
+          }
+        ]
+      },
+      options: {
+        rotation: -90,
+        circumference: 180,
+        cutout: "70%",
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: false
+          }
+        }
+      }
+    });
+  }
+}
 
   
 }
