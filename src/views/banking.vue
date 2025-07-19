@@ -39,6 +39,89 @@
   </div>
 
 
+<div class="bg-white z-0 mt-[200px] lg:ml-[110px] md:ml-[110px] ml-[10px] flex lg:flex-row  md:flex-wrap flex-wrap sm:flex-wrap gap-2 p-4  rounded-lg">
+  <!-- Card 1 -->
+  <div class="bg-gradient-to-br from-[#1e3a8a] to-[#312e81] text-white rounded-xl p-4 shadow-md relative lg:w-[280px] md:w-[280px] w-[450px] ">
+    <div class="absolute top-2 right-2 text-white text-sm opacity-70">
+      <i class="fa-solid fa-ellipsis-vertical"></i>
+    </div>
+    <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center mb-[60px] lg:mb-4 md:mb-4" >
+      <i class="fa-solid fa-database text-white text-lg"></i>
+    </div>
+    <div class="flex items-center gap-4">
+  <div class="text-2xl font-semibold">247,220</div>
+  <div class="text-sm flex items-center gap-1">
+    <span class="bg-white/20 px-2 py-0.5 rounded-full text-xs text-white font-semibold">
+      12% <i class="fa-solid fa-arrow-up"></i>
+    </span>
+  </div>
+</div>
+    <p class="mt-2 text-sm opacity-90">Customer Engagement</p>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="bg-white rounded-xl p-4 shadow-md relative border text-gray-800 lg:w-[280px] md:w-[280px] w-[450px] ">
+    <div class="absolute top-2 right-2 text-gray-400 text-sm">
+      <i class="fa-solid fa-ellipsis-vertical"></i>
+    </div>
+    <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mb-[60px] lg:mb-4 md:mb-4">
+      <i class="fa-solid fa-box text-purple-600 text-lg"></i>
+    </div>
+    <div class="flex items-center gap-4">
+<div class="text-2xl font-semibold">124,625</div>
+    <div class="text-sm mt-1 flex items-center gap-1">
+      <span class="bg-red-100 text-red-600 px-2 py-0.5 rounded-full text-xs font-semibold">3% <i class="fa-solid fa-arrow-down"></i></span>
+    </div>
+    </div>
+    
+    <p class="mt-2 text-sm text-gray-600">Lead Generation</p>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="bg-white rounded-xl p-4 shadow-md relative border text-gray-800 lg:w-[280px] md:w-[280px] w-[450px] ">
+    <div class="absolute top-2 right-2 text-gray-400 text-sm">
+      <i class="fa-solid fa-ellipsis-vertical"></i>
+    </div>
+    <div class="w-10 h-10 rounded-full bg-cyan-100 flex items-center justify-center mb-[60px] lg:mb-4 md:mb-4">
+      <i class="fa-solid fa-cube text-cyan-600 text-lg"></i>
+    </div>
+    <div class="flex items-center gap-4">
+<div class="text-2xl font-semibold">749,220</div>
+    <div class="text-sm mt-1 flex items-center gap-1">
+      <span class="bg-emerald-100 text-emerald-600 px-2 py-0.5 rounded-full text-xs font-semibold">4% <i class="fa-solid fa-arrow-up"></i></span>
+    </div>
+    </div>
+    
+    <p class="mt-2 text-sm text-gray-600">Support Tickets</p>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="bg-white rounded-xl p-4 shadow-md relative border text-gray-800 lg:w-[250px] md:w-[260px] w-[450px] ">
+    <div class="absolute top-2 right-2 text-gray-400 text-sm">
+      <i class="fa-solid fa-ellipsis-vertical"></i>
+    </div>
+    
+    <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mb-[60px] lg:mb-4 md:mb-4">
+      <i class="fa-solid fa-box-archive text-purple-600 text-lg"></i>
+    </div>
+    <div class="flex items-center gap-4">
+   <div class="text-2xl font-semibold">273,235</div>
+    <div class="text-sm mt-1 flex items-center gap-1">
+      <span class="bg-emerald-100 text-emerald-600 px-2 py-0.5 rounded-full text-xs font-semibold">9% <i class="fa-solid fa-arrow-up"></i></span>
+    </div>
+    </div>
+    
+    <p class="mt-2 text-sm text-gray-600">Pipeline Management</p>
+  </div>
+
+  <!-- Add New Card -->
+  <div class="bg-white border-dashed border-2 rounded-xl flex items-center justify-center text-gray-400 hover:bg-gray-50 cursor-pointer lg:w-[70px] md:w-[60px] w-[460px] lg:mt-0 md-mt-0 mt-[20px]">
+    <i class="fa-solid fa-plus text-2xl"></i>
+  </div>
+</div>
+
+
+
 
  <!-- duplicate -->
 
@@ -48,7 +131,7 @@
       'transition-colors duration-300',
       isScrollingUp ? 'lg:top-0' : 'lg:top-[-20px]',
     ]"
-    class="top-0 left-0 right-0 h-[280px] lg:mt-[150px] md:mt-[550px] mt-[820px] mb-[50px] ml-[10px] lg:ml-[116px] md:ml-[130px]  lg:mr-[600px] md:mr-[450px] mr-[10px] bg-white text-gray-800 rounded-xl shadow-lg p-6 absolute overflow-hidden border"
+    class="top-0 left-0 right-0 h-[280px] lg:mt-[420px] md:mt-[550px] mt-[1150px] mb-[50px] ml-[10px] lg:ml-[116px] md:ml-[130px]  lg:mr-[600px] md:mr-[450px] mr-[10px] bg-white text-gray-800 rounded-xl shadow-lg p-6 absolute overflow-hidden border"
   >
     <!-- Header -->
     <div class="flex items-center gap-4 mb-4">
@@ -91,7 +174,7 @@
       'transition-colors duration-300',
       isScrollingUp ? 'lg:top-0' : 'lg:top-[-20px]',
     ]"
-    class="lg:top-0 md:top-0 top-[250px] left-0 right-0 h-[280px] mt-[880px] lg:mt-[550px] md:mt-[550px] ml-[10px] lg:ml-[760px] md:ml-[500px] mr-[10px] bg-white text-gray-800 rounded-xl shadow-lg p-6 absolute overflow-hidden border"
+    class="lg:top-0 md:top-0 top-[250px] left-0 right-0 h-[280px] mt-[1250px] lg:mt-[420px] md:mt-[550px] ml-[10px] lg:ml-[760px] md:ml-[500px] mr-[10px] bg-white text-gray-800 rounded-xl shadow-lg p-6 absolute overflow-hidden border"
   >
     <!-- Header -->
     <div class="flex items-center gap-4 mb-4">
@@ -108,9 +191,9 @@
     </div>
 
     <!-- Chart Placeholder -->
-    <div class="w-full h-full pb-20">
+    <div class="w-full h-[100px]">
       <!-- Replace this with your actual chart component (e.g., Chart.js, ApexCharts, etc) -->
-    <canvas id="patientChart" height="300"></canvas>
+      <canvas id="chartOrdersProcessed"></canvas>
     </div>
 
     <!-- Legend -->
@@ -300,63 +383,10 @@ export default {
         }
       }
     });
-  };
-
-  const patientChartCtx = document.getElementById("patientChart");
-if (patientChartCtx) {
-  new Chart(patientChartCtx, {
-    type: "bar",
-    data: {
-      labels: [
-        "15", "16", "17", "18", "19", "20", "21",
-        "22", "23", "24", "25", "26", "27", "28", "29"
-      ],
-      datasets: [
-        {
-          label: "Patient Admissions Over Time",
-          data: [820, 860, 840, 990, 730, 560, 440, 670, 850, 600, 470, 870, 980, 310, 750],
-          backgroundColor: "#60a5fa", // blue
-          borderRadius: 4
-        },
-        {
-          label: "Bed Occupancy Rate Over Time",
-          data: [400, 420, 210, 40, 420, 200, 20, 10, 370, 50, 260, 30, 120, 280, 230],
-          backgroundColor: "#cbd5e1", // gray
-          borderRadius: 4
-        }
-      ]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: {
-          position: "bottom"
-        }
-      },
-      scales: {
-        x: {
-          stacked: false,
-          title: {
-            display: true,
-            text: "Date (July-Aug 2025)"
-          }
-        },
-        y: {
-          beginAtZero: true,
-          max: 1000,
-          title: {
-            display: true,
-            text: "Count"
-          }
-        }
-      }
-    }
-  });
-}
-
   }
 }
-  
 
+  
+}
 </script>
+
