@@ -115,7 +115,7 @@
   </div>
 
   <!-- Add New Card -->
-  <div class="bg-white border-dashed border-2 rounded-xl flex items-center justify-center text-gray-400 hover:bg-gray-50 cursor-pointer w-[70px]">
+  <div class="bg-white border-dashed border-2 rounded-xl flex items-center justify-center text-gray-400 hover:bg-gray-50 cursor-pointer lg:w-[70px] md:w-[60px] w-[460px] lg:mt-0 md-mt-0 mt-[20px]">
     <i class="fa-solid fa-plus text-2xl"></i>
   </div>
 </div>
@@ -131,7 +131,7 @@
       'transition-colors duration-300',
       isScrollingUp ? 'lg:top-0' : 'lg:top-[-20px]',
     ]"
-    class="top-0 left-0 right-0 h-[280px] lg:mt-[550px] md:mt-[550px] mt-[820px] mb-[50px] ml-[10px] lg:ml-[116px] md:ml-[130px]  lg:mr-[600px] md:mr-[450px] mr-[10px] bg-white text-gray-800 rounded-xl shadow-lg p-6 absolute overflow-hidden border"
+    class="top-0 left-0 right-0 h-[280px] lg:mt-[420px] md:mt-[550px] mt-[1150px] mb-[50px] ml-[10px] lg:ml-[116px] md:ml-[130px]  lg:mr-[600px] md:mr-[450px] mr-[10px] bg-white text-gray-800 rounded-xl shadow-lg p-6 absolute overflow-hidden border"
   >
     <!-- Header -->
     <div class="flex items-center gap-4 mb-4">
@@ -174,7 +174,7 @@
       'transition-colors duration-300',
       isScrollingUp ? 'lg:top-0' : 'lg:top-[-20px]',
     ]"
-    class="lg:top-0 md:top-0 top-[250px] left-0 right-0 h-[280px] mt-[880px] lg:mt-[550px] md:mt-[550px] ml-[10px] lg:ml-[760px] md:ml-[500px] mr-[10px] bg-white text-gray-800 rounded-xl shadow-lg p-6 absolute overflow-hidden border"
+    class="lg:top-0 md:top-0 top-[250px] left-0 right-0 h-[280px] mt-[1250px] lg:mt-[420px] md:mt-[550px] ml-[10px] lg:ml-[760px] md:ml-[500px] mr-[10px] bg-white text-gray-800 rounded-xl shadow-lg p-6 absolute overflow-hidden border"
   >
     <!-- Header -->
     <div class="flex items-center gap-4 mb-4">
