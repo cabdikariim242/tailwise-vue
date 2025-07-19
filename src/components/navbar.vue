@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar " >
+  <div class="navbar">
     <div
       class="absolute top-0 left-0 right-0 h-[300px]"
       :class="[
@@ -62,13 +62,15 @@
             class="ml-2 text-white/60 font-public-sans select-none text-[15px]"
             >⌘K</span
           >
+          
         </div>
+
+       
 
         <div class="container-3 flex items-center gap-6">
           <i class="fa-solid fa-grip text-[#d1cccc] text-[18px]"></i>
           <i class="fa-solid fa-expand text-[#d1cccc] text-[18px]"></i>
           <i class="fa-solid fa-bell text-[#d1cccc] text-[18px]"></i>
-
           <!-- Profile avatar -->
           <img
             src="../assets/yiksi.png"
@@ -76,6 +78,7 @@
             class="mr-4 w-10 h-10 rounded-full border-4 border-[#2d527c] object-cover"
           />
         </div>
+        
       </div>
     </div>
   </div>
@@ -85,12 +88,16 @@
 export default {
     props: ['isopen'],
 
+
   data() {
     return {
       isScrollingUp: true,
       lastScrollY: window.scrollY,
+
     };
   },
+
+
   methods: {
     handleScroll() {
       const currentScrollY = window.scrollY;
@@ -103,7 +110,7 @@ export default {
   },
   beforeDestroy() {
     window.removeEventListener("scroll", this.handleScroll);
-  },
+  }
    
 };
 </script>

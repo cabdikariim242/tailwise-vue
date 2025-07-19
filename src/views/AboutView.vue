@@ -174,7 +174,7 @@
       'transition-colors duration-300',
       isScrollingUp ? 'lg:top-0' : 'lg:top-[-20px]',
     ]"
-    class="lg:top-0 md:top-0 top-[250px] left-0 right-0 h-[280px] mt-[1250px] lg:mt-[420px] md:mt-[550px] ml-[10px] lg:ml-[760px] md:ml-[500px] mr-[10px] bg-white text-gray-800 rounded-xl shadow-lg p-6 absolute overflow-hidden border"
+    class="lg:top-0 md:top-0 top-[250px] left-0 right-0 h-[280px] mt-[120px] lg:mt-[420px] md:mt-[550px] ml-[10px] lg:ml-[760px] md:ml-[500px] mr-[10px] bg-white text-gray-800 rounded-xl shadow-lg p-6 absolute overflow-hidden border"
   >
     <!-- Header -->
     <div class="flex items-center gap-4 mb-4">
@@ -213,7 +213,7 @@
 </template>
 
 <script>
-  import {
+import {
   Chart,
   LineController,
   LineElement,
@@ -222,9 +222,11 @@
   Title,
   CategoryScale,
   Filler,
-  ArcElement
+  ArcElement,
+  DoughnutController // ✅ MUHIIM: Ku dar DoughnutController
 } from 'chart.js';
 
+// ✅ Dhammaan waxyaabaha la register gareynayo
 Chart.register(
   LineController,
   LineElement,
@@ -233,30 +235,24 @@ Chart.register(
   Title,
   CategoryScale,
   Filler,
-  ArcElement
+  ArcElement,
+  DoughnutController // ✅ MUHIIM: La register gareeyay
 );
-
-
-Chart.register(LineController, LineElement, PointElement, LinearScale, Title, CategoryScale, Filler);
-
 
 export default {
   name: 'HomeView',
-  components: {
-    
-  },
 
-
-  data(){
-    return{
+  data() {
+    return {
       dateFilter: 'custom',
       isScrollingUp: true,
       lastScrollY: window.scrollY,
-       options: ['Daily', 'Monthly', 'Yearly'],
+      options: ['Daily', 'Monthly', 'Yearly'],
       selected: 'Daily',
     };
   },
-    methods: {
+
+  methods: {
     handleScroll() {
       const currentScrollY = window.scrollY;
       this.isScrollingUp = currentScrollY < this.lastScrollY;
@@ -264,128 +260,125 @@ export default {
     },
   },
 
-
   mounted() {
-  window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener("scroll", this.handleScroll);
 
-  const chartConfigs = [
-    {
-      id: "chartSold",
-      label1: "Products Sold",
-      data1: [-100, 2000, -3900, -9400, 9500, -7600, 9700],
-      color1: "#1e3a8a",
-      label2: "Store Locations",
-      data2: [10, 20, 30, 25, 40, 35, 50],
-      color2: "#cbd5e1"
-    },
-    {
-      id: "chartShipped",
-      label1: "Total Shipped",
-      data1: [-500, 3900, -9400, 9600, -5700, 580, -900],
-      color1: "#2dd4bf",
-      label2: "Warehouses",
-      data2: [8, 15, 20, 18, 25, 30, 35],
-      color2: "#cbd5e1"
-    },
-    {
-      id: "chartRevenue",
-      label1: "Revenue",
-      data1: [150, 250, 400, 550, 700, 900, 1000],
-      color1: "#16a34a",
-      label2: "Expenses",
-      data2: [50, 100, 200, 300, 400, 500, 600],
-      color2: "#fca5a5"
-    },
-    {
-      id: "chartReturns",
-      label1: "Returns",
-      data1: [10, 30, 25, 40, 50, 35, 20],
-      color1: "#f59e0b",
-      label2: "Complaints",
-      data2: [2, 5, 3, 6, 7, 4, 1],
-      color2: "#fcd34d"
-    }
-  ];
-
-  chartConfigs.forEach(({ id, label1, data1, color1, label2, data2, color2 }) => {
-    const ctx = document.getElementById(id);
-    if (!ctx) return;
-
-    new Chart(ctx, {
-      type: "line",
-      data: {
-        labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-        datasets: [
-          {
-            label: label1,
-            data: data1,
-            borderColor: color1,
-            backgroundColor: color1 + "20",
-            fill: true,
-            tension: 0.4,
-            pointRadius: 0,
-            borderWidth: 2
-          },
-          {
-            label: label2,
-            data: data2,
-            borderColor: color2,
-            backgroundColor: color2 + "20",
-            fill: true,
-            borderDash: [5, 5],
-            tension: 0.4,
-            pointRadius: 0,
-            borderWidth: 2
-          }
-        ]
+    // ✅ Line chart configs
+    const chartConfigs = [
+      {
+        id: "chartSold",
+        label1: "Products Sold",
+        data1: [-100, 2000, -3900, -9400, 9500, -7600, 9700],
+        color1: "#1e3a8a",
+        label2: "Store Locations",
+        data2: [10, 20, 30, 25, 40, 35, 50],
+        color2: "#cbd5e1"
       },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: {
-            display: false
-          }
+      {
+        id: "chartShipped",
+        label1: "Total Shipped",
+        data1: [-500, 3900, -9400, 9600, -5700, 580, -900],
+        color1: "#2dd4bf",
+        label2: "Warehouses",
+        data2: [8, 15, 20, 18, 25, 30, 35],
+        color2: "#cbd5e1"
+      },
+      {
+        id: "chartRevenue",
+        label1: "Revenue",
+        data1: [150, 250, 400, 550, 700, 900, 1000],
+        color1: "#16a34a",
+        label2: "Expenses",
+        data2: [50, 100, 200, 300, 400, 500, 600],
+        color2: "#fca5a5"
+      },
+      {
+        id: "chartReturns",
+        label1: "Returns",
+        data1: [10, 30, 25, 40, 50, 35, 20],
+        color1: "#f59e0b",
+        label2: "Complaints",
+        data2: [2, 5, 3, 6, 7, 4, 1],
+        color2: "#fcd34d"
+      }
+    ];
+
+    chartConfigs.forEach(({ id, label1, data1, color1, label2, data2, color2 }) => {
+      const ctx = document.getElementById(id);
+      if (!ctx) return;
+
+      new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+          datasets: [
+            {
+              label: label1,
+              data: data1,
+              borderColor: color1,
+              backgroundColor: color1 + "20",
+              fill: true,
+              tension: 0.4,
+              pointRadius: 0,
+              borderWidth: 2
+            },
+            {
+              label: label2,
+              data: data2,
+              borderColor: color2,
+              backgroundColor: color2 + "20",
+              fill: true,
+              borderDash: [5, 5],
+              tension: 0.4,
+              pointRadius: 0,
+              borderWidth: 2
+            }
+          ]
         },
-        scales: {
-          x: { display: false },
-          y: { display: false }
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false }
+          },
+          scales: {
+            x: { display: false },
+            y: { display: false }
+          }
         }
-      }
+      });
     });
-  });
 
-  // chartOrdersProcessed – Doughnut (Semi-circle)
-  const doughnutCtx = document.getElementById("chartOrdersProcessed");
-  if (doughnutCtx) {
-    new Chart(doughnutCtx, {
-      type: "doughnut",
-      data: {
-        labels: ["Order Volume", "Coverage Area"],
-        datasets: [
-          {
-            data: [80, 20],
-            backgroundColor: ["#64748b", "#f87171"],
-            borderWidth: 0
-          }
-        ]
-      },
-      options: {
-        rotation: -90,
-        circumference: 180,
-        cutout: "70%",
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: {
-            display: false
+    // ✅ Doughnut Chart
+    const doughnutCtx = document.getElementById("chartOrdersProcessed");
+    if (doughnutCtx) {
+      new Chart(doughnutCtx, {
+        type: "doughnut",
+        data: {
+          labels: ["Order Volume", "Coverage Area"],
+          datasets: [
+            {
+              data: [80, 20],
+              backgroundColor: ["#64748b", "#f87171"],
+              borderWidth: 0
+            }
+          ]
+        },
+        options: {
+          rotation: -90,
+          circumference: 180,
+          cutout: "70%",
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false }
           }
         }
-      }
-    });
+      });
+    }
   }
-}
-
-  
-}
+};
 </script>
+
+
+
