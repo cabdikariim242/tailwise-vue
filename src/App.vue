@@ -35,6 +35,6 @@ export default {
 
 <style>
 body{
-  height: 8400px;
+  height: 900px;
 }
 </style>

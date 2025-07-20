@@ -10,176 +10,298 @@
       <h2 
       class="text-white text-lg mb-2 bg font-semibold"
       
-      >General Report</h2>
+      >Production Insights
+</h2>
 
 
       <div  
       class=" relative flex mr-[250px] "
       
+      
       >
+       <h2 
+      class="text-white text-lg mb-2 bg font-semibold"
+      
+      >Production Insights
+</h2>
   </div>
 
 
   </div>
+
 
 <!-- CHART ONE -->
-    <div class=" z-0 bg-white shadow-lg rounded-2xl p-6 absolute  top-0 left-0 right-0 mt-[200px]  ml-[10px] lg:ml-[116px] md:ml-[130px]  lg:mr-[420px] md:mr-[450px] mr-[10px]">
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-      <div class="flex gap-2 mb-2 md:mb-0">
-        <div class="relative flex gap-6 ">
-         <span class="absolute inset-y-0 left-0  flex items-center pl-3 pointer-events-none">
-    <i class="fa-solid fa-calendar-days text-white "></i>
-  </span>
-        <select v-model="dateCustom" class="bg-[#223b60] text-white px-4 py-2 pr-12 pl-8 rounded-lg shadow focus:outline-none lg:w-auto md:w-auto w-full">
-        <option value="custom">Custom Date</option>
-        <option value="daily">Daily</option>
-        <option value="weekly">Weekly</option>
-        <option value="monthly">Monthly</option>
-        <option value="yearly">Yearly</option>
-      </select>
+    <div class="w-[750px] z-0 bg-white shadow-lg rounded-2xl p-6 absolute  top-0 left-0 right-0 mt-[200px]  ml-[10px] lg:ml-[116px] md:ml-[130px]  lg:mr-[420px] md:mr-[450px] mr-[10px]">
+    <!-- Header -->
+    <div class="flex justify-between items-start mb-4">
+      <div>
+        <p class="text-sm text-gray-500">Total Production Units</p>
+        <h2 class="text-xl font-bold text-gray-800">
+          24,176,221 <span class="text-green-500 text-sm font-semibold">11% <i class="fas fa-arrow-up"></i></span>
+        </h2>
       </div>
-        <button class="border border-gray-300 rounded px-3 py-1 text-sm text-gray-700">19 Jul, 2025 - 19 Aug, 2025</button>
-      </div>
-      <div class="flex gap-3 text-sm text-blue-600 font-medium">
-        <button class="hover:underline">Export to PDF</button>
-        <button class="hover:underline">Show full report</button>
+      <div class="text-sm text-gray-600 border rounded px-3 py-1 bg-gray-100">
+        19 Jul, 2025 - 19 Aug, 2025
       </div>
     </div>
 
-<canvas ref="chartCanvas" class="w-full h-96"></canvas>
+    <!-- Chart -->
+    <div class="">
+          <!-- <canvas ref="areaChart"></canvas> -->
+
+      <canvas id="chartSold"></canvas>
+    </div>
+
+    <!-- Footer -->
+    <div class="flex justify-between items-center mt-4 text-sm text-gray-500">
+      <div class="flex gap-4">
+        <div class="flex items-center gap-1">
+          <span class="w-2 h-2 rounded-full bg-indigo-600"></span> Machine Performance
+        </div>
+        <div class="flex items-center gap-1">
+          <span class="w-2 h-2 rounded-full border border-indigo-400"></span> Defect Rate
+        </div>
+      </div>
+      <a href="#" class="text-blue-500 hover:underline">
+        <i class="fa-solid fa-up-right-from-square mr-1"></i> Show full report
+      </a>
+    </div>
   </div>
+
 
   <!-- CHART TWO -->
 
-
-    
-     <div class="bg-white shadow-lg rounded-2xl p-6 absolute lg:top-0 md:top-0 top-[250px] left-0 right-0  mt-[370px] lg:mt-[200px] md:mt-[200px] ml-[10px] lg:ml-[960px] md:ml-[700px] mr-[10px]   z-0">
-      <!-- Header -->
-      <h2 
-      class="text-black lg:text-white md:text-white  mt-[-70px] mb-[40px] capitalize text-lg  bg font-semibold "
+    <div class="w-[400px] bg-white shadow-lg rounded-2xl p-6 absolute lg:top-0 md:top-0 top-[250px] left-0 right-0  mt-[370px] lg:mt-[200px] md:mt-[200px] ml-[10px] lg:ml-[900px] md:ml-[700px] mr-[10px]   z-0">
+    <!-- Header -->
+     
+    <div class="flex justify-between items-start mb-4">
       
-      >patient overview </h2>
-      <div class="flex items-center justify-between mb-3">
-        <div>
-          <p class="text-2xl font-semibold text-gray-900">24,782</p>
-          <p class="text-sm text-gray-500">Total Patients</p>
-        </div>
-        <div class="relative flex gap-6 ">
-           <span class="absolute inset-y-0 left-0  flex items-center pl-3 pointer-events-none">
-      <i class="fa-solid fa-calendar-days text-white "></i>
-       </span>
-          <select v-model="dateFilter" class="bg-[#223b60] text-white px-4 py-2 pr-12 pl-8 rounded-lg shadow focus:outline-none lg:w-auto md:w-auto w-full">
-          <option value="daily">Daily</option>
-          <option value="weekly">Weekly</option>
-          <option value="monthly">Monthly</option>
-          <option value="yearly">Yearly</option>
-        </select>
-        </div>
+      <div>
+        <p class="text-sm text-gray-500">Raw Materials
+</p>
+        <h2 class="text-xl font-bold text-gray-800">
+          3,700,121 <span class="text-red-500 text-sm font-semibold">4% <i class="fas fa-arrow-down"></i></span>
+        </h2>
       </div>
-      <!-- Condition Distribution Bar -->
-      <div class="w-full h-2 rounded-full overflow-hidden flex mb-5">
-        <div class="bg-violet-500 w-[30%]"></div>
-        <div class="bg-blue-500 w-[25%]"></div>
-        <div class="bg-orange-400 w-[10%]"></div>
-        <div class="bg-teal-400 w-[35%]"></div>
-      </div>
-      <!-- Categories -->
-      <div class="grid grid-cols-2 gap-y-4 text-sm text-gray-700 mb-4">
-        <div>
-          <p class="font-medium">Heart Disease</p>
-          <p class="text-lg font-semibold text-gray-900">2,974 <span class="text-green-600 text-sm">11% ↑</span></p>
-        </div>
-        <div>
-          <p class="font-medium truncate">Respiratory Issues</p>
-          <p class="text-lg font-semibold text-gray-900">2,556 <span class="text-green-600 text-sm">11% ↑</span></p>
-        </div>
-        <div>
-          <p class="font-medium">Diabetes</p>
-          <p class="text-lg font-semibold text-gray-900">1,696 <span class="text-green-600 text-sm">2% ↑</span></p>
-        </div>
-        <div>
-          <p class="font-medium">Other</p>
-          <p class="text-lg font-semibold text-gray-900">1,278 <span class="text-green-600 text-sm">2% ↑</span></p>
-        </div>
-      </div>
-      <!-- Footer Button -->
-      <button class="w-full mt-2 border border-gray-300 text-gray-700 text-sm py-2 rounded-md flex items-center justify-center gap-1 hover:bg-gray-50">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M8 16l4-4 4 4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        See Full Report
-      </button>
-      
+      <div class="ml-auto">
+        <i class="fa-solid fa-ellipsis-vertical text-gray-400"></i>
 
-      <!-- second one -->
+      </div>
+    </div>
 
-      
-   </div>
+    <!-- Chart -->
+    <div class="">
+          <!-- <canvas ref="areaChart"></canvas> -->
+
+      <canvas id="chartReturns"></canvas>
+    </div>
+
+  
+  </div>
+
+
+   <div class="w-[400px] bg-white shadow-lg rounded-2xl p-6 absolute lg:top-0 md:top-0 top-[250px] left-0 right-0  mt-[370px] lg:mt-[480px] md:mt-[200px] ml-[10px] lg:ml-[900px] md:ml-[700px] mr-[10px]   z-0">
+    <!-- Header -->
+    <div class="flex justify-between items-start mb-4">
+      <div>
+        <p class="text-sm text-gray-500">Product Stock
+
+</p>
+        <h2 class="text-xl font-bold text-gray-800">
+          1,246,221 <span class="text-green-500 text-sm font-semibold">8% <i class="fas fa-arrow-down"></i></span>
+        </h2>
+      </div>
+      <div class="ml-auto">
+        <i class="fa-solid fa-ellipsis-vertical text-gray-400"></i>
+
+      </div>
+    </div>
+
+    <!-- Chart -->
+    <div class="">
+          <!-- <canvas ref="areaChart"></canvas> -->
+
+      <canvas id="chartRevenue"></canvas>
+    </div>
+
+  
+  </div>
+
 
   
 </template>
 
- <script setup>
-import { ref, onMounted } from 'vue'
-import { Chart, registerables } from 'chart.js'
-      const dateFilter  = 'daily'
-      const dateCustom   = 'custom'
-// Register Chart.js components
-Chart.register(...registerables)
+<script>
+import {
+  Chart,
+  LineController,
+  LineElement,
+  PointElement,
+  LinearScale,
+  Title,
+  CategoryScale,
+  Filler,
+  ArcElement,
+  DoughnutController
+} from 'chart.js';
 
-const chartCanvas = ref(null)
 
-onMounted(() => {
-  const ctx = chartCanvas.value.getContext('2d')
 
-  const chart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29'],
-      datasets: [
-        {
-          label: 'Patient Admissions Over Time',
-          data: [950, 230, 680, 750, 980, 870, 920, 980, 720, 680, 630, 550, 330, 980, 400],
-          backgroundColor: 'rgba(56, 189, 248, 0.7)', // sky-400
-        },
-        {
-          label: 'Bed Occupancy Rate Over Time',
-          data: [880, 150, 590, 690, 800, 730, 810, 910, 680, 600, 420, 410, 260, 930, 530],
-          backgroundColor: 'rgba(167, 139, 250, 0.7)', // violet-400
-        }
-      ]
+
+Chart.register(
+  LineController,
+  LineElement,
+  PointElement,
+  LinearScale,
+  Title,
+  CategoryScale,
+  Filler,
+  ArcElement,
+  DoughnutController 
+);
+
+export default {
+  name: 'HomeView',
+  name: 'MultiSeriesAreaChart',
+  
+
+  data() {
+    return {
+      dateFilter: 'custom',
+      isScrollingUp: true,
+      lastScrollY: window.scrollY,
+      options: ['Daily', 'Monthly', 'Yearly'],
+      selected: 'Daily',
+    };
+  },
+
+  methods: {
+    handleScroll() {
+      const currentScrollY = window.scrollY;
+      this.isScrollingUp = currentScrollY < this.lastScrollY;
+      this.lastScrollY = currentScrollY;
     },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: {
-          position: 'bottom',
-          labels: {
-            boxWidth: 12,
-            padding: 15
-          }
-        },
-        title: {
-          display: false
-        }
+  },
+
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+
+    // ✅ Line chart configs
+    const chartConfigs = [
+      {
+        id: "chartSold",
+        label1: "Products Sold",
+        data1: [-100, 2000, -3900, -9400, 9500, -7600, 9700],
+        color1: "#1e3a8a",
+        label2: "Store Locations",
+        data2: [10, 20, 30, 25, 40, 35, 50],
+        color2: "#cbd5e1"
       },
-      scales: {
-        x: {
-          grid: {
-            display: false
-          }
-        },
-        y: {
-          beginAtZero: true
-        }
+      {
+        id: "chartShipped",
+        label1: "Total Shipped",
+        data1: [-500, 3900, -9400, 9600, -5700, 580, -900],
+        color1: "#2dd4bf",
+        label2: "Warehouses",
+        data2: [8, 15, 20, 18, 25, 30, 35],
+        color2: "#cbd5e1"
+      },
+      {
+        id: "chartRevenue",
+        label1: "Revenue",
+        data1: [150, 250, 400, 550, 700, 900, 1000],
+        color1: "#16a34a",
+        label2: "Expenses",
+        data2: [50, 100, 200, 300, 400, 500, 600],
+        color2: "#fca5a5"
+      },
+      {
+        id: "chartReturns",
+        label1: "Returns",
+        data1: [10, 30, 25, 40, 50, 35, 20],
+        color1: "#f59e0b",
+        label2: "Complaints",
+        data2: [2, 5, 3, 6, 7, 4, 1],
+        color2: "#fcd34d"
       }
+    ];
+
+    chartConfigs.forEach(({ id, label1, data1, color1, label2, data2, color2 }) => {
+      const ctx = document.getElementById(id);
+      if (!ctx) return;
+
+      new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+          datasets: [
+            {
+              label: label1,
+              data: data1,
+              borderColor: color1,
+              backgroundColor: color1 + "20",
+              fill: true,
+              tension: 0.4,
+              pointRadius: 0,
+              borderWidth: 2
+            },
+            {
+              label: label2,
+              data: data2,
+              borderColor: color2,
+              backgroundColor: color2 + "20",
+              fill: true,
+              borderDash: [5, 5],
+              tension: 0.4,
+              pointRadius: 0,
+              borderWidth: 2
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false }
+          },
+          scales: {
+            x: { display: false },
+            y: { display: false }
+          }
+        }
+      });
+    });
+
+  
+    const doughnutCtx = document.getElementById("chartOrdersProcessed");
+    if (doughnutCtx) {
+      new Chart(doughnutCtx, {
+        type: "doughnut",
+        data: {
+          labels: ["Order Volume", "Coverage Area"],
+          datasets: [
+            {
+              data: [80, 20],
+              backgroundColor: ["#64748b", "#f87171"],
+              borderWidth: 0
+            }
+          ]
+        },
+        options: {
+          rotation: -90,
+          circumference: 180,
+          cutout: "70%",
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false }
+          }
+        }
+      });
     }
-  })
-
-
-})
+  }
+};
 </script>
-
 
 <style>
 
