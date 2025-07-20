@@ -5,7 +5,7 @@
      @mouseleave="hover = false"
       :class="[
      toggle || hover ? 'w-[300px]' : 'w-[80px]',
-     'phone:hidden flex flex-col bg-[#f3f5f8] group fixed bottom-3 top-0 left-3 transition-all duration-300 mr-10 mt-5 rounded-lg'
+     'hidden  lg:flex md:flex flex-col bg-[#f3f5f8] group fixed bottom-3 top-0 left-3 transition-all duration-300 mr-10 mt-5 rounded-lg'
         ]"
       style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6)"
      >
@@ -13,7 +13,7 @@
       <div class="flex justify-between items-center">
         <div class="flex">
           <i 
-            class="fa-brands fa-stackpath text-[35px] pl-6 pr-3 pt-3 text-5 transition-transform duration-50 rounded-full group-hover:rotate-[360deg]"
+            class="fa-brands fa-stackpath text-[35px] text-[#206c93] pl-6 pr-3 pt-3 text-5 transition-transform duration-50 rounded-full group-hover:rotate-[360deg]"
           ></i>
           <p
             v-if="!toggle"
@@ -154,7 +154,7 @@
       <div class="flex justify-between items-center">
         <div class="flex">
           <i 
-            class="fa-brands fa-stackpath text-[35px] pl-6 pr-3 pt-3 text-5  rounded-full "
+            class="fa-brands fa-stackpath text-[#206c93] text-[35px] pl-6 pr-3 pt-3 text-5  rounded-full "
           ></i>
           <p
             
