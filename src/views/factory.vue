@@ -14,24 +14,14 @@
 </h2>
 
 
-      <div  
-      class=" relative flex mr-[250px] "
-      
-      
-      >
-       <h2 
-      class="text-white text-lg mb-2 bg font-semibold"
-      
-      >Production Insights
-</h2>
-  </div>
+     
 
 
   </div>
 
 
 <!-- CHART ONE -->
-    <div class="w-[750px] z-0 bg-white shadow-lg rounded-2xl p-6 absolute  top-0 left-0 right-0 mt-[200px]  ml-[10px] lg:ml-[116px] md:ml-[130px]  lg:mr-[420px] md:mr-[450px] mr-[10px]">
+    <div class=" z-0 bg-white shadow-lg rounded-2xl p-6 absolute  top-0 left-0 right-0 mt-[200px]  ml-[10px] lg:ml-[116px] md:ml-[130px]  lg:mr-[475px] md:mr-[450px] mr-[10px]">
     <!-- Header -->
     <div class="flex justify-between items-start mb-4">
       <div>
@@ -71,13 +61,16 @@
 
   <!-- CHART TWO -->
 
-    <div class="w-[400px] bg-white shadow-lg rounded-2xl p-6 absolute lg:top-0 md:top-0 top-[250px] left-0 right-0  mt-[370px] lg:mt-[200px] md:mt-[200px] ml-[10px] lg:ml-[900px] md:ml-[700px] mr-[10px]   z-0">
+    <div class=" bg-red-300 shadow-lg rounded-2xl p-6 absolute lg:top-0 md:top-0 top-[220px] left-0 right-0  mt-[340px] lg:mt-[200px] md:mt-[200px] ml-[10px] lg:ml-[900px] md:ml-[700px] mr-[10px]   z-0">
     <!-- Header -->
-     
+      <h2 
+      class="text-black lg:text-white md:text-white  mt-[-70px] mb-[80px] capitalize text-lg  bg font-semibold "
+      
+      >Production Efficiency</h2>
     <div class="flex justify-between items-start mb-4">
       
       <div>
-        <p class="text-sm text-gray-500">Raw Materials
+        <p class="text-sm text-blue-800 font-[500]">Raw Materials
 </p>
         <h2 class="text-xl font-bold text-gray-800">
           3,700,121 <span class="text-red-500 text-sm font-semibold">4% <i class="fas fa-arrow-down"></i></span>
@@ -100,14 +93,15 @@
   </div>
 
 
-   <div class="w-[400px] bg-white shadow-lg rounded-2xl p-6 absolute lg:top-0 md:top-0 top-[250px] left-0 right-0  mt-[370px] lg:mt-[480px] md:mt-[200px] ml-[10px] lg:ml-[900px] md:ml-[700px] mr-[10px]   z-0">
+  <!-- CHART THREE -->
+   <div class="  shadow-lg rounded-2xl p-6 absolute lg:top-0 md:top-0 top-[280px] left-0 bg-slate-900 right-0  mt-[610px] lg:mt-[530px] md:mt-[530px] ml-[10px] lg:ml-[900px] md:ml-[700px] mr-[10px]   z-0">
     <!-- Header -->
     <div class="flex justify-between items-start mb-4">
       <div>
-        <p class="text-sm text-gray-500">Product Stock
+        <p class="text-sm text-pink-500">Product Stock
 
 </p>
-        <h2 class="text-xl font-bold text-gray-800">
+        <h2 class="text-xl font-bold text-[#1fdedb]">
           1,246,221 <span class="text-green-500 text-sm font-semibold">8% <i class="fas fa-arrow-down"></i></span>
         </h2>
       </div>
