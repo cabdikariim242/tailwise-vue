@@ -261,7 +261,7 @@ export default {
     {
       id: "chartSold",
       label1: "Products Sold",
-      data1: [-100, 2000, -3900, -9400, 9500, -7600, 9700],
+      data1: [-100, 3000, -3800, -9400, 9500, -7600, 9700],
       color1: "#1e3a8a",
       label2: "Store Locations",
       data2: [10, 20, 30, 25, 40, 35, 50],
