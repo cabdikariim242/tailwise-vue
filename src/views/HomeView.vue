@@ -270,10 +270,10 @@ export default {
     {
       id: "chartShipped",
       label1: "Total Shipped",
-      data1: [-500, 3900, -9400, 9600, -5700, 580, -900],
+      data1: [-500, 3900, -9400, 7878, -5700, 580, -900],
       color1: "#2dd4bf",
       label2: "Warehouses",
-      data2: [8, 15, 20, 18, 25, 30, 35],
+      data2: [8, 15, 20, 18, 25, 88, 35],
       color2: "#cbd5e1"
     },
     {
