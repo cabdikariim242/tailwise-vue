@@ -1,5 +1,6 @@
 <template>
     <label v-if="label">
+        <span v-if="required">**</span>
     <slot></slot>
 </label>
 </template>

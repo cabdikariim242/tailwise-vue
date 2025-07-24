@@ -13,7 +13,7 @@
        submit 
       </AppButton>
 
-      <AppButton :disabled="false" @clickme="clicked" title="click here" :customClass="'bg-black focus:outline-none focus:ring border px-10 py-[10px] rounded-[30px] text-[white]'">
+      <AppButton :disabled="false" @clickme="clicked" title="click here" :customClass="'bg-black px-10 py-[10px] rounded-[30px] text-[white]'">
        verify 
       </AppButton>
 
