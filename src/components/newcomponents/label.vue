@@ -1,5 +1,6 @@
 <template>
-    <label v-if="label">
+    <label :class="labelClass" :for="id" >
+        {{ label }}
         <span v-if="required">**</span>
     <slot></slot>
 </label>
@@ -9,8 +10,20 @@
 export default {
     props:{
         label:{
+            type:String,
+            default:''
+        },
+        labelClass:{
+            type:String,
+            default: ''
+        },
+        id:{
+            type:String,
+            default:''
+        },
+        required:{
             type:Boolean,
-            default:false
+            default:true
         }
     }
 }

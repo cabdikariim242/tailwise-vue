@@ -1,7 +1,6 @@
   <template>
-  <div
-      class="flex flex-col justify-between lg:flex-row md:flex-row  absolute lg:top-[150px] md:top-[150px] top-[110px] left-0 right-0   lg:ml-[125px] md:ml-[125px] ml-4 mr-[20px] ">
-      <AppButton @clickme="toggle" title="click here" :customClass="'bg-blue-300 p-3 focus:outline-none focus:ring border rounded-2xl text-white'"/>
+ <BaseCard class="mt-[400px] z-10 ml-[200px]">
+ <AppButton @clickme="toggle" title="click here" :customClass="'bg-blue-300 p-3 focus:outline-none focus:ring border rounded-2xl text-white'"/>
 
 <AppButton
     :title="'Click me'"
@@ -17,16 +16,17 @@
        verify 
       </AppButton>
 
-    </div>
+    </BaseCard>
       
         </template>
 
   <script>
   import AppButton  from '@/components/newcomponents/AppButton.vue'
+  import BaseCard  from '@/components/newcomponents/BaseCard.vue'
 
   export default {
     components:
-    {AppButton},
+    {AppButton, BaseCard},
     data(){
       return{
         title:'',
