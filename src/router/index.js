@@ -1,37 +1,32 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import AboutView from '../views/AboutView.vue'
-import hospital from '../views/hospital.vue'
-import factory from '../views/factory.vue'
-import banking from '../views/banking.vue'
+import buttons from '../views/buttons.vue'
+import inputGroup from '../views/inputGroup.vue'
+import alert from '../views/alert.vue'
+import tabs from '../views/tabs.vue'
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: '/buttons',
+    name: 'buttons',
+    component: buttons
   },
   {
-    path: '/hospital',
-    name: 'hospital',
-    component: hospital
+    path: '/inputGroup',
+    name: 'inputGroup',
+    component: inputGroup
   },
   {
-    path: '/factory',
-    name: 'factory',
-    component: factory
+    path: '/alert',
+    name: 'alert',
+    component: alert
   },
   {
-    path: '/banking',
-    name: 'banking',
-    component: banking
+    path: '/tabs',
+    name: 'tabs',
+    component: tabs
    
   },
-  {
-    path: '/about',
-    name: 'about',
-   component: AboutView
-  }
+ 
 ]
 
 const router = createRouter({

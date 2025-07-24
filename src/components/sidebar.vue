@@ -36,7 +36,7 @@
           v-if="!toggle"
           class="mt-5 group-hover:flex hidden text-[#c6d0e0] text-[15px] font-[500]"
         >
-          DASHBOARD
+          COMPONENTS
         </p>
         <p
           v-if="!toggle"
@@ -45,14 +45,14 @@
           ...
         </p>
         <p v-if="toggle" class="mt-5 text-[#c6d0e0] text-[15px] font-[500]">
-          DASHBOARD
+          COMPONENTS
         </p>
       </div>
 
       <!-- content -->
       <router-link
-        to="/"
-        class="mx-2 rounded-lg mt-10 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+           :to="{name:'buttons'}"
+        class="mx-2 rounded-lg mt-5 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center ">
           <i class="fa-solid fa-gauge-high text-[20px] text-[#4b93b1]"></i>
@@ -60,16 +60,16 @@
             v-if="!toggle"
             class="group-hover:flex text-[15px] hidden text-[#465569] font-[500]"
           >
-            E-ECOMERCE
+          BUTTONS
           </p>
           <p v-if="toggle" class="text-[#465569] text-[15px] font-[500]">
-            E-ECOMERCE
+          BUTTONS
           </p>
         </div>
       </router-link>
 
       <router-link
-        to="/about"
+           :to="{name:'inputGroup'}"
       
         class="mx-2 rounded-lg mt-10 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
@@ -79,16 +79,16 @@
             v-if="!toggle"
             class="group-hover:flex text-[15px] hidden text-[#465569] font-[500]"
           >
-           CRM
+           INPUTGROUPS
           </p>
           <p v-if="toggle" class="text-[#465569] text-[15px] font-[500]">
-           CRM
+           INPUTGROUPS
           </p>
         </div>
       </router-link>
 
       <router-link
-        :to="{name:'hospital'}"
+        :to="{name:'alert'}"
         class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
@@ -97,16 +97,16 @@
             v-if="!toggle"
             class="group-hover:flex text-[15px] hidden text-[#465569] font-[500]"
           >
-           Hospital
+           ALERT
           </p>
           <p v-if="toggle" class="text-[#465569] text-[15px] font-[500]">
-           Hospital
+           ALERT
           </p>
         </div>
       </router-link>
 
       <router-link
-        :to="{name:'factory'}"
+        :to="{name:'tabs'}"
         class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
@@ -115,34 +115,18 @@
             v-if="!toggle"
             class="group-hover:flex text-[15px] hidden text-[#465569] font-[500]"
           >
-            Factory
+            TABS
           </p>
           <p v-if="toggle" class="text-[#465569] text-[15px] font-[500]">
-            Factory
+            TABS
           </p>
         </div>
       </router-link>
 
 
-      <router-link
-        :to="{ name: 'banking' }"
-        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
-      >
-        <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
-          <i class="fa-solid fa-hard-drive text-[#4b93b1]"></i>
-          <p
-            v-if="!toggle"
-            class="group-hover:flex text-[15px] hidden text-[#465569] font-[500]"
-          >
-           Banking
-          </p>
-          <p v-if="toggle" class="text-[#465569] text-[15px] font-[500]">
-           Banking
-          </p>
-        </div>
-      </router-link>
-     </div>
-
+      
+  
+    </div>
    <div 
     v-if="isopen"
       class="w-[300px]
@@ -176,14 +160,14 @@
          
           class="mt-5  text-[#c6d0e0] text-[15px] font-[500]"
         >
-          DASHBOARD
+          COMPONENTS
         </p>
       </div>
 
       <!-- content -->
       <router-link
-        to="/"
-        class="mx-2 rounded-lg mt-10 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+           :to="{name:'buttons'}"
+        class="mx-2 rounded-lg mt-5 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center ">
           <i class="fa-solid fa-gauge-high text-[20px]  text-[#4b93b1]"></i>
@@ -191,14 +175,14 @@
         
             class=" text-[15px]  text-[#465569] font-[500]"
           >
-            E-ECOMERCE
+            BUTTONS
           </p>
           
         </div>
       </router-link>
 
       <router-link
-        to="/about"
+        :to="{name:'inputGroup'}"
       
         class="mx-2 rounded-lg mt-10 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
@@ -209,14 +193,14 @@
             class=" text-[15px] 
              text-[#465569] font-[500]"
           >
-           CRM
+           INPUTGROUPS
           </p>
           
         </div>
       </router-link>
 
       <router-link
-        :to="{name:'hospital'}"
+        :to="{name:'alert'}"
         class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
@@ -225,14 +209,14 @@
         
             class=" text-[15px]  text-[#465569] font-[500]"
           >
-           Hospital
+           ALERT
           </p>
           
         </div>
       </router-link>
 
       <router-link
-        :to="{name:'factory'}"
+        :to="{name:'tabs'}"
         class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
@@ -241,27 +225,14 @@
         
             class=" text-[15px]  text-[#465569] font-[500]"
           >
-            Factory
+            TABS
           </p>
           
         </div>
       </router-link>
 
 
-      <router-link
-        :to="{ name: 'banking' }"
-        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
-      >
-        <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
-          <i class="fa-solid fa-hard-drive text-[#4b93b1]"></i>
-          <p
-            class=" text-[15px]  text-[#465569] font-[500]"
-          >
-           Banking
-          </p>
-        
-        </div>
-      </router-link>
+ 
      </div>
 
      

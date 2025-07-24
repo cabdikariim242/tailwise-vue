@@ -1,6 +1,6 @@
 <template>
   <button  :disabled="disabled" :class="customClass" @click="$emit('clickme') ">
-    <slot>{{ title }}</slot>
+    <slot></slot>
   </button>
 </template>
 
