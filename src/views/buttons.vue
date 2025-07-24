@@ -1,6 +1,6 @@
   <template>
-    <div class="mt-[202px]  ml-[150px] z-10">
-      <p class="text-white mr-[80px]"><strong>Buttons</strong> . Explore the versatility of our Buttons component for enhancing user interactions on your application.
+    <div class="mt-[202px]  ml-[150px] z-[8]">
+      <p class="text-white mr-[80px] "><strong>Buttons</strong> . Explore the versatility of our Buttons component for enhancing user interactions on your application.
 </p>
    <BaseCard>
     <h1 class="font-bold text-xl mb-4">Basic Buttons</h1>

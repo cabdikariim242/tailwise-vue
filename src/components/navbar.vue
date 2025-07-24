@@ -14,7 +14,7 @@
             ? 'bg-[#1b4b76]'
             : 'bg-[#051662] px-3 transtiton-all duration-300',
         ]"
-        class=" z-[9] flex justify-between items-center fixed top-5 lg:left-[115px] left-[5px] md:left-[115px] right-5 rounded-lg h-[60px]"
+        class=" z-10 flex justify-between items-center fixed top-5 lg:left-[115px] left-[5px] md:left-[115px] right-5 rounded-lg h-[60px]"
       >
         
 
