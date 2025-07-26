@@ -1,34 +1,85 @@
   <template>
-  <div
-      class="flex flex-col justify-between lg:flex-row md:flex-row  absolute lg:top-[150px] md:top-[150px] top-[110px] left-0 right-0   lg:ml-[125px] md:ml-[125px] ml-4 mr-[20px] ">
-     <Input
-      title="search up"
+  <div class="flex lg:flex-row md:flex-row flex-col gap-4 b w-full"
+>   <div class="flex flex-col w-full ">
+     <Label label="Name" :labelClass="'text-blue-600 mb-5 mt-5'" id="text" :required="true"/>
+     
+      <Input
+      title="Name"
+      type="Name"
+      v-model="text"
+      :customClass="'p-4 focus:outline-none focus:ring border '"
+      />
+</div>
+
+      <div class="flex flex-col  w-full">
+        <Label label="Second Name" :labelClass="'text-blue-600 mb-5 mt-5'" id="text" :required="false"/>
+     
+      <Input
+      title="Second Name"
       type="text"
-      v-model="modelValue"
+      v-model="SecondName"
       :customClass="'p-4 focus:outline-none focus:ring border'"
       />
-      <p>{{ modelValue }}</p>
+      <p>{{ email }}</p>
+
+      </div>
+      <div class="flex flex-col ">
+        <Label label="Email" :labelClass="'text-blue-600 mb-5 mt-5'" id="text" :required="false"/>
+     
+      <Input
+      title="Email"
+      type="email"
+      v-model="email"
+      :customClass="'p-4 focus:outline-none focus:ring border'"
+      />
+      <p>{{ email }}</p>
+
+      </div>
+     
+     
+      <div class="flex flex-col ">
+         <Label label="password" :labelClass="'text-blue-600 mb-5 mt-5'" id="text" :required="true"/>
+     
+      <Input
+      title="password"
+      type="password"
+      v-model="password"
+      :customClass="'p-4 focus:outline-none focus:ring border'"
+      />
+      <p>{{ password }}</p>
+      </div>
     </div>
       
   </template>
 
   <script>
   import Input  from '@/components/newcomponents/input-comp.vue'
+    import Label  from '@/components/newcomponents/Label.vue'
+
 
   export default {
     components:
-    {Input},
+    {Input,Label},
     data(){
       return{
         customClass:'',
+        Name:'',
+        SecondName:'',
+        password:'',
+        email:'',
         title: '',
         modelValue: '',
         type: null,
+        labelClass:'',
+        id:'',
+        required:true,
+        label:''
+
 
       }
-    }
+    },
+    emits: ['update:modelValue'],
   }
 
       
   </script>
-
