@@ -3,6 +3,7 @@ import buttons from '../views/buttons.vue'
 import inputGroup from '../views/inputGroup.vue'
 import alert from '../views/alert.vue'
 import tabs from '../views/tabs.vue'
+import AccordionView from '../views/AccordionView.vue'
 
 const routes = [
   {
@@ -26,6 +27,12 @@ const routes = [
     component: tabs
    
   },
+  {
+    path: '/AccordionView',
+    name: 'AccordionView',
+    component: AccordionView
+   
+  }
  
 ]
 
