@@ -11,7 +11,7 @@
       />
 </div>
 
-      <div class="flex flex-col  w-full">
+      <div class="flex flex-col  w-full  ">
         <Label label="Second Name" :labelClass="'text-blue-600 mb-5 mt-5'" id="text" :required="false"/>
      
       <Input

@@ -1,5 +1,5 @@
     <template>
-    <BaseCard class="mt-[250px] lg:ml-[150px] md:ml-[150px] ml-[5px] z-[9] bg-red-700 " >
+    <BaseCard class="mt-[250px] lg:ml-[150px] md:ml-[150px] ml-[5px] z-[9]  " >
      <inputGroup v-model="modelValue" :customClass="'border '" :labelClass="'text-green-500'" :required="true" id="text" type="text" title="this not " label="this is label" />
       
      

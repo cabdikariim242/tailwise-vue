@@ -1,7 +1,15 @@
 <template>
-  <button  :disabled="disabled" :class="customClass" @click="$emit('clickme') ">
+   <component
+    :is="href ? 'a' : 'button'"
+    :href="href"
+     :target="target"
+     :rel="href ? 'noopener noreferrer' : null"
+    :disabled="disabled"
+    :class="customClass"
+    @click="$emit('clickme')"
+  >
     <slot></slot>
-  </button>
+  </component>
 </template>
 
 
@@ -23,7 +31,16 @@ export default {
       customClass: {
       type: String,
       default: ''
-      }
+      },
+
+       href: {
+      type: String,
+      default: null
+    },
+    target: {
+      type: String,
+      default: '_self' // ama '_blank' si default ah
+    },
     
   }
 
