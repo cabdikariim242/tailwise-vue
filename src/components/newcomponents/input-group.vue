@@ -1,24 +1,53 @@
   <template>
-  <div
-      class="flex flex-col justify-between absolute lg:top-[150px] md:top-[150px] top-[110px] left-0 right-0   lg:ml-[125px] md:ml-[125px] ml-4 mr-[20px] ">
-      <Label label="this label is for text" :labelClass="'text-red-600'" id="text" :required="true"/>
+  <div class="flex lg:flex-row md:flex-row flex-col gap-4 b w-full"
+>   <div class="flex flex-col w-full ">
+     <Label label="Name" :labelClass="'text-blue-600 mb-5 mt-5'" id="text" :required="true"/>
      
       <Input
-      title="this is input"
-      type="text"
-      v-model="modelValue"
+      title="Name"
+      type="Name"
+      v-model="text"
       :customClass="'p-4 focus:outline-none focus:ring border '"
       />
+</div>
 
-      <Label label="this is second lable" :labelClass="'text-red-600'" id="text" :required="false"/>
+      <div class="flex flex-col  w-full">
+        <Label label="Second Name" :labelClass="'text-blue-600 mb-5 mt-5'" id="text" :required="false"/>
      
       <Input
-      title="this is second input"
+      title="Second Name"
       type="text"
-      v-model="modelValue"
+      v-model="SecondName"
       :customClass="'p-4 focus:outline-none focus:ring border'"
       />
-      <p>{{ modelValue }}</p>
+      <p>{{ email }}</p>
+
+      </div>
+      <div class="flex flex-col ">
+        <Label label="Email" :labelClass="'text-blue-600 mb-5 mt-5'" id="text" :required="false"/>
+     
+      <Input
+      title="Email"
+      type="email"
+      v-model="email"
+      :customClass="'p-4 focus:outline-none focus:ring border'"
+      />
+      <p>{{ email }}</p>
+
+      </div>
+     
+     
+      <div class="flex flex-col ">
+         <Label label="password" :labelClass="'text-blue-600 mb-5 mt-5'" id="text" :required="true"/>
+     
+      <Input
+      title="password"
+      type="password"
+      v-model="password"
+      :customClass="'p-4 focus:outline-none focus:ring border'"
+      />
+      <p>{{ password }}</p>
+      </div>
     </div>
       
   </template>
@@ -34,6 +63,10 @@
     data(){
       return{
         customClass:'',
+        Name:'',
+        SecondName:'',
+        password:'',
+        email:'',
         title: '',
         modelValue: '',
         type: null,

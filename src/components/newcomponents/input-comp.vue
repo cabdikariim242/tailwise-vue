@@ -1,5 +1,6 @@
 <template>
-    <input :value="modelValue" :placeholder="title" :type="type" :class="customClass"  @input="$emit('update:modelValue', $event.target.value)" v-bind="$attrs">
+    <input :value="modelValue" :placeholder="title" :type="type" :class="customClass"
+      @input="$emit('update:modelValue', $event.target.value)" v-bind="$attrs">
 </template>
 
 <script>
@@ -20,6 +21,10 @@ export default {
         title:{
             type:String,
             default: ''
+        },
+        required:{
+            type:String,
+            default:false
         }
      }
   
