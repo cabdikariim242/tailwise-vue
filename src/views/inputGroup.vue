@@ -1,33 +1,38 @@
     <template>
-    <BaseCard class="mt-[250px] lg:ml-[150px] md:ml-[150px] ml-[5px] z-[9]  " >
-     <inputGroup v-model="modelValue" :customClass="'border '" :labelClass="'text-green-500'" :required="true" id="text" type="text" title="this not " label="this is label" />
+    <div class="mt-[230px] lg:ml-[150px] md:ml-[150px] mr-4 ml-[5px] z-[9]  " >
       
      
-      </BaseCard>
+     <inputWrapper v-model="modelValue" :customClass="'border '" :labelClass="''" :required="true" id="text" type="text" title="this not " label="this is label" />
+     
+     
+      </div>
       
     </template>
 
     <script>  
-    import inputGroup  from '@/components/newcomponents/input-group.vue'
-    import BaseCard  from '@/components/newcomponents/BaseCard.vue'
+    import inputWrapper  from '@/components/newcomponents/inputWrapper.vue'
 
 
     export default {
       components:
-      {inputGroup,BaseCard},
+      {inputWrapper},
       data(){
         return{
-          customClass:'',
-          title: '',
-          modelValue: '',
-          type: null,
-          labelClass:'',
-          id:'',
-          required:true,
-          label:''
+        customClass:'',
+        Name:'',
+        SecondName:'',
+        password:'',
+        email:'',
+        title: '',
+        modelValue: '',
+        type: null,
+        labelClass:'',
+        id:'',
+        required:true,
+        label:''
 
 
-        }
+      }
       }
     }
 
