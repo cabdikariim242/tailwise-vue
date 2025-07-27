@@ -7,7 +7,7 @@
         :key="tab.slot"
         @click="activeTab = index"
         :class="[
-          'px-56 py-2 text-sm font-medium border border-gray-300 rounded-t-md transition',
+          'lg:px-[15rem] md:px-[8rem] sm:px-[4rem] px-[5rem] py-2 text-sm font-medium border border-gray-300 rounded-t-md transition',
           activeTab === index
             ? underline
               ? 'bg-white text-blue-600 border-b-4 !border-black'
