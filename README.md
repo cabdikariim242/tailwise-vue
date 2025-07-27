@@ -1,3 +1,1 @@
-
-
-](https://lambent-truffle-65699d.netlify.app/tabs)
+https://lambent-truffle-65699d.netlify.app/
