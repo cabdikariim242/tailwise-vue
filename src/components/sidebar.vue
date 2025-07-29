@@ -140,7 +140,7 @@
           </p>
         </div>
           </router-link>
-       <!-- <router-link
+       <router-link
         :to="{name:'TableViews'}"
         class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
@@ -156,7 +156,7 @@
             TableViews
           </p>
         </div>
-      </router-link> -->
+      </router-link>
       
        <router-link
         :to="{name:'DatePicker'}"

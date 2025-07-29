@@ -1,17 +1,21 @@
 <template>
   <div
     class="flex flex-col justify-between lg:flex-row md:flex-row absolute lg:top-[150px] md:top-[150px] top-[110px] left-0 right-0 lg:ml-[125px] md:ml-[125px] ml-4 mr-[20px]"
-  >
+  > <BaseCard>
     <div class="flex flex-col w-full">
-      <div class="flex justify-between">
-        <input
-          class="inline-block max-w-[200px] mb-10 border focus:outline-none focus:ring"
-          type="text"
-          placeholder="search"
-          v-model="searching"
-        />
+      
+      <div class="flex justify-between items-center">
+        <div class="flex gap-3 justify-center">
+          <label for="text" class="text-[20px] text-gray-600 font-bold">Search By</label>
+          <input
+            class="inline-block px-5  py-2 mb-10 border-2 border-[gray] focus:outline-none focus:ring"
+            type="text"
+            placeholder="Name"
+            v-model="searching"
+          />
+        </div>
         <div
-          class="flex justfify-center items-center gap-4 text-[16px] font-[500]"
+          class="flex justfify-center gap-4 text-[16px] font-[500]"
         >
           <label class="flex mr-2 items-center">
             <input
@@ -48,37 +52,41 @@
 
       <table class="border-collapse border border-teal-500 w-full">
         <thead>
-          <tr class="bg-teal-100 text-teal-700">
-            <th class="border border-teal-500 py-2 text-left">Name</th>
-            <th class="border border-teal-500 py-2 text-left">Second Name</th>
-            <th class="border border-teal-500 py-2 text-left">Gender</th>
-            <th class="border border-teal-500 py-2 text-left">Status</th>
-            <th class="border border-teal-500 py-2 text-left">Location</th>
-            <th class="border border-teal-500 py-2 text-left">
+          <tr class="bg-teal-100 text-gray-700">
+            <th class="border border-gray-500 py-3 text-left">Name</th>
+            <th class="border border-gray-500 py-2 text-left">Second Name</th>
+            <th class="border border-gray-500 py-2 text-left">Gender</th>
+            <th class="border border-gray-500 py-2 text-left">Status</th>
+            <th class="border border-gray-500 py-2 text-left">Location</th>
+            <th class="border border-gray-500 py-2 text-left">Images</th>
+            <th class="border border-gray-500 py-2 text-left">
               Joined the Team
             </th>
-            <th class="border border-teal-500 py-2 text-left">Age</th>
+            <th class="border border-gray-500 py-2 text-left">Age</th>
           </tr>
         </thead>
         <tbody>
           <tr v-for="detail in filteredDetails" :key="detail">
-            <td class="border border-teal-500 px-4 py-2">{{ detail.name }}</td>
-            <td class="border border-teal-500 px-4 py-2">
+            <td class="border border-gray-500 bg-gray-400 text-black font-[500] px-4 py-2">{{ detail.name }}</td>
+            <td class="border border-gray-500 bg-gray-400 text-black font-[500] px-4 py-2">
               {{ detail.second }}
             </td>
-            <td class="border border-teal-500 px-4 py-2">
+            <td class="border border-gray-500 bg-gray-400 text-black font-[500] px-4 py-2">
               {{ detail.gender }}
             </td>
-            <td :class="detail.status === 'Active'? 'text-green-500' : 'text-red-500'" class="border border-teal-500 px-4  py-2">
+            <td :class="detail.status === 'Active'? 'text-green-500' : 'text-red-500'" class="border border-gray-500 bg-gray-400 text-bllack font-[500] px-4  py-2">
               {{ detail.status }}
             </td>
-            <td class="border border-teal-500 px-4 py-2">
+            <td class="border border-gray-500 bg-gray-400 text-black font-[500] px-4 py-2">
               {{ detail.location }}
             </td>
-            <td class="border border-teal-500 px-4 py-2">
+            <td class="border border-gray-500 bg-gray-400 text-black font-[500] px-4 py-2">
+             <img class="w-20" :src="detail.picture" alt=""> 
+            </td>
+            <td class="border border-gray-500 bg-gray-400 text-black font-[500] px-4 py-2">
               {{ detail.joined }}
             </td>
-            <td class="border border-teal-500 px-4 py-2">{{ detail.age }}</td>
+            <td class="border border-gray-500 bg-gray-400 text-black font-[500] px-4 py-2">{{ detail.age }}</td>
           </tr>
 
           <tr v-if="filteredDetails.length === 0">
@@ -89,11 +97,15 @@
         </tbody>
       </table>
     </div>
+      </BaseCard>
   </div>
 </template>
 
 <script>
+
+import BaseCard from "@/components/newcomponents/BaseCard.vue";
 export default {
+  components:{BaseCard},
   data() {
     return {
       searching: "",
@@ -101,6 +113,7 @@ export default {
       details: [
         {
           name: "maxamad",
+          picture: require("../assets/user.png"),   
           second: "cali",
           location: "mogadisho",
           age: 21,
@@ -110,6 +123,7 @@ export default {
         },
         {
           name: "cali",
+          picture: require("../assets/studentUser.png"), 
           second: "farax",
           location: "afgooye",
           age: 31,
@@ -119,6 +133,7 @@ export default {
         },
         {
           name: "caasho",
+          picture: require("../assets/profile-icon.png"), 
           second: "farax",
           location: "afgooye",
           age: 21,
@@ -128,6 +143,7 @@ export default {
         },
         {
           name: "cayni",
+          picture: require("../assets/avaterUser.png"), 
           second: "faraxan",
           location: "mogadisho",
           age: 19,
@@ -137,6 +153,7 @@ export default {
         },
         {
           name: "Warsame",
+          picture: require("../assets/bussinesMan.png"), 
           second: "ciise",
           location: "mogadisho",
           age: 25,
@@ -146,6 +163,7 @@ export default {
         },
         {
           name: "hidaayo",
+          picture: require("../assets/femaleUser.png"), 
           second: "cali",
           location: "howlWadaag",
           age: 18,
