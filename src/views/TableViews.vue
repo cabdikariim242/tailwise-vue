@@ -80,6 +80,12 @@
             </td>
             <td class="border border-teal-500 px-4 py-2">{{ detail.age }}</td>
           </tr>
+
+          <tr v-if="filteredDetails.length === 0">
+    <td colspan="7" class="text-center text-red-500 py-4">
+      No matching results found
+    </td>
+  </tr>
         </tbody>
       </table>
     </div>

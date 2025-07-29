@@ -3,7 +3,9 @@ import buttons from '../views/buttons.vue'
 import inputGroup from '../views/inputGroup.vue'
 import alert from '../views/alert.vue'
 import tabs from '../views/tabs.vue'
+import TableViews from '../views/TableViews.vue'
 import AccordionView from '../views/AccordionView.vue'
+import DatePicker from '../views/DatePicker.vue'
 
 const routes = [
   {
@@ -25,6 +27,18 @@ const routes = [
     path: '/tabs',
     name: 'tabs',
     component: tabs
+   
+  },
+  {
+    path: '/TableViews',
+    name: 'TableViews',
+    component: TableViews
+   
+  },
+  {
+    path: '/DatePicker',
+    name: 'DatePicker',
+    component: DatePicker
    
   },
   {

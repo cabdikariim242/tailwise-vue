@@ -139,6 +139,41 @@
             Accordion
           </p>
         </div>
+          </router-link>
+       <!-- <router-link
+        :to="{name:'TableViews'}"
+        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+      >
+        <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
+          <i class="fa-solid fa-file  text-[20px] text-[#4b93b1]"></i>
+          <p
+            v-if="!toggle"
+            class="group-hover:flex text-[15px] hidden text-[#465569] font-[500]"
+          >
+            TableViews
+          </p>
+          <p v-if="toggle" class="text-[#465569] text-[15px] font-[500]">
+            TableViews
+          </p>
+        </div>
+      </router-link> -->
+      
+       <router-link
+        :to="{name:'DatePicker'}"
+        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+      >
+        <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
+          <i class="fa-solid fa-book-bookmark   text-[20px] text-[#4b93b1]"></i>
+          <p
+            v-if="!toggle"
+            class="group-hover:flex text-[15px] hidden text-[#465569] font-[500]"
+          >
+            DatePicker
+          </p>
+          <p v-if="toggle" class="text-[#465569] text-[15px] font-[500]">
+            DatePicker
+          </p>
+        </div>
       </router-link>
 
       
@@ -250,6 +285,21 @@
           
         </div>
       </router-link>
+      <router-link
+        :to="{name:'TableViews'}"
+        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+      >
+        <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
+          <i class="fa-solid fa-file text-[20px] text-[#4b93b1]"></i>
+          <p
+        
+            class=" text-[15px]  text-[#465569] font-[500]"
+          >
+            Table
+          </p>
+          
+        </div>
+      </router-link>
 
       <router-link
         :to="{name:'AccordionView'}"
@@ -262,6 +312,21 @@
             class=" text-[15px]  text-[#465569] font-[500]"
           >
             Accordion
+          </p>
+          
+        </div>
+      </router-link>
+      <router-link
+        :to="{name:'DatePicker'}"
+        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+      >
+        <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
+          <i class="fa-solid fa-file text-[20px] text-[#4b93b1]"></i>
+          <p
+        
+            class=" text-[15px]  text-[#465569] font-[500]"
+          >
+            DatePicker  
           </p>
           
         </div>
