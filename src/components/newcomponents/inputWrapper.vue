@@ -171,7 +171,7 @@ so i wannna be able to change the colors of theinput
 
   <script>
   import Input  from '../newcomponents/input-comp.vue'
-    import Label  from '../newcomponents/Label.vue'
+    import Label  from './labelComp.vue'
     import BaseCard  from '../newcomponents/BaseCard.vue'
 
 
