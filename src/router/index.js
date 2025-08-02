@@ -3,7 +3,12 @@ import buttons from '../views/buttons.vue'
 import inputGroup from '../views/inputGroup.vue'
 import alert from '../views/alert.vue'
 import tabs from '../views/tabs.vue'
+import TableViews from '../views/TableViews.vue'
 import AccordionView from '../views/AccordionView.vue'
+import DatePicker from '../views/DatePicker.vue'
+import displayview from '@/views/displayview.vue'
+import TomSelectView from '@/views/TomSelectView.vue'
+import ImageZoomView from '@/views/ImageZoomView.vue'
 
 const routes = [
   {
@@ -28,11 +33,39 @@ const routes = [
    
   },
   {
+    path: '/TableViews',
+    name: 'TableViews',
+    component: TableViews
+   
+  },
+  {
+    path: '/DatePicker',
+    name: 'DatePicker',
+    component: DatePicker
+   
+  },
+  {
     path: '/AccordionView',
     name: 'AccordionView',
     component: AccordionView
    
-  }
+  },
+    {
+    path: '/displayview',
+    name: 'displayView',
+    component: displayview
+   
+  },
+    {
+    path: '/tomselectView',
+    name: 'TomSelectView',
+    component: TomSelectView
+  },
+      {
+    path: '/ImageZoomView',
+    name: 'ImageZoomView',
+    component: ImageZoomView
+  },
  
 ]
 
