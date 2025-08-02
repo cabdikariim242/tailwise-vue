@@ -6,7 +6,6 @@ import tabs from '../views/tabs.vue'
 import TableViews from '../views/TableViews.vue'
 import AccordionView from '../views/AccordionView.vue'
 import DatePicker from '../views/DatePicker.vue'
-import displayview from '@/views/displayview.vue'
 import TomSelectView from '@/views/TomSelectView.vue'
 import ImageZoomView from '@/views/ImageZoomView.vue'
 
@@ -48,12 +47,6 @@ const routes = [
     path: '/AccordionView',
     name: 'AccordionView',
     component: AccordionView
-   
-  },
-    {
-    path: '/displayview',
-    name: 'displayView',
-    component: displayview
    
   },
     {

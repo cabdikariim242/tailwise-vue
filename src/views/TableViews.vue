@@ -5,18 +5,16 @@
     <BaseCard>
       <div class="flex flex-col w-full">
         <div class="flex justify-between items-center">
-          <div class="flex gap-3 justify-center">
-            <label for="text" class="text-[20px] text-gray-600 font-bold"
-              >Search By</label
-            >
-            <input
-              class="inline-block px-5 py-2 mb-10 border-2 border-[gray] focus:outline-none focus:ring"
-              type="text"
-              placeholder="Name"
-              v-model="searching"
-            />
-          </div>
-          <div class="flex justfify-center gap-4 text-[16px] font-[500]">
+          <input
+            class="w-full md:w-[400px] px-4 py-2 border border-gray-300 bg-gray-600 text-white placeholder:text-white rounded-lg focus:outline-none focus:ring focus:border-blue-400"
+            type="text"
+            placeholder="search by name, gender, location , status "
+            v-model="searching"
+          />
+
+          <div
+            class="flex justfify-center items-center gap-4 text-[16px] font-[500]"
+          >
             <label class="flex mr-2 items-center">
               <input
                 type="radio"
@@ -50,35 +48,33 @@
           </div>
         </div>
 
-        <table class="border-collapse border border-gray-200 w-full">
-          <thead>
-            <tr class="bg-gray-200 text-gray-700">
-              <th class="border border-gray-500 py-3 text-left">Name</th>
+        <table
+          class="table-auto w-full border border-gray-300 rounded-lg shadow-md"
+        >
+          <thead class="bg-gray-500 text-white">
+            <tr class="text-gray-700">
+              <th class="py-3 text-left">Name</th>
 
-              <th class="border border-gray-500 py-2 text-left">Images</th>
-              <th class="border border-gray-500 py-2 text-left">Gender</th>
-              <th class="border border-gray-500 py-2 text-left">Status</th>
-              <th class="border border-gray-500 py-2 text-left">Location</th>
-              <th class="border border-gray-500 py-2 text-left">
-                Joined the Team
-              </th>
-              <th class="border border-gray-500 py-2 text-left">Age</th>
+              <th class="py-2 text-left">Images</th>
+              <th class="py-2 text-left">Gender</th>
+              <th class="py-2 text-left">Status</th>
+              <th class="py-2 text-left">Location</th>
+              <th class="py-2 text-left">Joined the Team</th>
+              <th class="py-2 text-left">Age</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody class="bg-white">
             <tr
-              class="border-b border-gray-400  text-black font-[500] px-4 py-2"
+              class="text-center hover:bg-gray-100 transition duration-200"
               v-for="detail in filteredDetails"
               :key="detail"
             >
-              <td
-                class="bg-gray-200 border-r border-l border-gray-400 text-black font-[500] px-4 py-2"
-              >
+              <td class="px-4 py-2 text-left">
                 {{ detail.name }}
               </td>
 
               <td
-                class="bg-white border-r border-l flex flex-col itms-center justify-center border-gray-400 text-black font-[500] pl-4  py-2"
+                class="bg-white flex flex-col itms-center justify-center text-black font-[500] px-4 py-2 text-left"
               >
                 <img
                   class="w-20 bg-slate-400 rounded-full"
@@ -87,33 +83,25 @@
                 />
               </td>
 
-              <td
-                class="bg-gray-200 border-r border-l border-gray-400 text-black font-[500] px-4 py-2"
-              >
+              <td class="px-4 py-2 text-left">
                 {{ detail.gender }}
               </td>
               <td
                 :class="
-                  detail.status === 'Active' ? 'text-green-500' : 'text-red-500'
+                  detail.status === 'Joogo' ? 'text-green-500' : 'text-red-500'
                 "
-                class="bg-white  border-gray-400text-bllack font-[500] px-4 py-2"
+                class="bg-white text-bllack font-[500] px-4 py-2 text-left"
               >
                 {{ detail.status }}
               </td>
-              <td
-                class="bg-gray-200 border-l border-gray-400 text-black font-[500] px-4 py-2"
-              >
+              <td class="text-black font-[500] px-4 py-2 text-left">
                 {{ detail.location }}
               </td>
 
-              <td
-                class="bg-white border-r border-l border-gray-400 text-black font-[500] px-4 py-2"
-              >
+              <td class="bg-white text-black font-[500] px-4 py-2 text-left">
                 {{ detail.joined }}
               </td>
-              <td
-                class="bg-gray-200 border-r border-l border-gray-400 text-black font-[500] px-4 py-2"
-              >
+              <td class="px-4 py-2 text-left">
                 {{ detail.age }}
               </td>
             </tr>
@@ -146,7 +134,7 @@ export default {
           location: "mogadisho",
           age: 21,
           gender: "Rag",
-          status: "Active",
+          status: "Joogo",
           joined: "5-12-2025",
         },
         {
@@ -156,7 +144,7 @@ export default {
           location: "afgooye",
           age: 31,
           gender: "Rag",
-          status: "Active",
+          status: "Joogo",
           joined: "2025-07-28",
         },
         {
@@ -166,7 +154,7 @@ export default {
           location: "afgooye",
           age: 21,
           gender: "dumar",
-          status: "inactive",
+          status: "Maqan",
           joined: "2025-07-28",
         },
         {
@@ -176,7 +164,7 @@ export default {
           location: "mogadisho",
           age: 19,
           gender: "dumar  ",
-          status: "inactive",
+          status: "Maqan",
           joined: "2025-07-28",
         },
         {
@@ -186,7 +174,7 @@ export default {
           location: "mogadisho",
           age: 25,
           gender: "Rag",
-          status: "Active",
+          status: "Joogo",
           joined: "13-5-2023",
         },
         {
@@ -196,7 +184,7 @@ export default {
           location: "howlWadaag",
           age: 18,
           gender: "dumar",
-          status: "inactive",
+          status: "Maqan",
           joined: "1-2-2024",
         },
       ],
@@ -239,7 +227,6 @@ export default {
       return filteredByDate.filter((detail) => {
         return (
           detail.name.toLowerCase().includes(searchLower) ||
-          detail.second.toLowerCase().includes(searchLower) ||
           detail.location.toLowerCase().includes(searchLower) ||
           detail.gender.toLowerCase().includes(searchLower) ||
           detail.status.toLowerCase().includes(searchLower)

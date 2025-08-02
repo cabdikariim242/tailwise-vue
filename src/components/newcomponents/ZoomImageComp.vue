@@ -5,7 +5,7 @@
     alt="Zoomable"
     class="w-64 h-64 cursor-pointer"
   />
-  <sr
+
 </template>
 
 <script>

@@ -1,18 +1,18 @@
 <template>
   <div class="z-10 relative">
-   <div
-     @mouseenter="hover = true"
-     @mouseleave="hover = false"
+    <div
+      @mouseenter="hover = true"
+      @mouseleave="hover = false"
       :class="[
-     toggle || hover ? 'w-[300px] overflow-y-auto' : 'w-[80px]',
-     'hidden  lg:flex md:flex flex-col bg-[#f3f5f8] group fixed bottom-3 top-0 left-3 transition-all duration-300 mr-10 mt-5 rounded-lg'
-        ]"
+        toggle || hover ? 'w-[300px] overflow-y-auto' : 'w-[80px]',
+        'hidden  lg:flex md:flex flex-col bg-[#f3f5f8] group fixed bottom-3 top-0 left-3 transition-all duration-300 mr-10 mt-5 rounded-lg',
+      ]"
       style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6)"
-     >
+    >
       <!-- all icons are here -->
       <div class="flex justify-between items-center">
         <div class="flex">
-          <i 
+          <i
             class="fa-brands fa-stackpath text-[35px] text-[#206c93] pl-6 pr-3 pt-3 text-5 transition-transform duration-50 rounded-full group-hover:rotate-[360deg]"
           ></i>
           <p
@@ -51,45 +51,46 @@
 
       <!-- content -->
       <router-link
-           :to="{name:'buttons'}"
+        :to="{ name: 'buttons' }"
         class="mx-2 rounded-lg mt-5 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
-        <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center ">
+        <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
           <i class="fa-solid fa-gauge-high text-[20px] text-[#4b93b1]"></i>
           <p
             v-if="!toggle"
             class="group-hover:flex text-[15px] hidden text-[#465569] font-[500]"
           >
-          BUTTONS
+            BUTTONS
           </p>
           <p v-if="toggle" class="text-[#465569] text-[15px] font-[500]">
-          BUTTONS
+            BUTTONS
           </p>
         </div>
       </router-link>
 
       <router-link
-           :to="{name:'inputGroup'}"
-      
-        class="mx-2 rounded-lg mt-10 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+        :to="{ name: 'inputGroup' }"
+        class="mx-2 rounded-lg mt-4 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
-          <i class="fa-duotone fa-solid fa-chart-line text-[20px] text-[#4b93b1]"></i>
+          <i
+            class="fa-duotone fa-solid fa-chart-line text-[20px] text-[#4b93b1]"
+          ></i>
           <p
             v-if="!toggle"
             class="group-hover:flex text-[15px] hidden text-[#465569] font-[500]"
           >
-           INPUTGROUPS
+            INPUTGROUPS
           </p>
           <p v-if="toggle" class="text-[#465569] text-[15px] font-[500]">
-           INPUTGROUPS
+            INPUTGROUPS
           </p>
         </div>
       </router-link>
 
       <router-link
-        :to="{name:'alert'}"
-        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+        :to="{ name: 'alert' }"
+        class="mx-2 rounded-lg mt-4 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
           <i class="fa-solid fa-book-bookmark text-[20px] text-[#4b93b1]"></i>
@@ -97,20 +98,20 @@
             v-if="!toggle"
             class="group-hover:flex text-[15px] hidden text-[#465569] font-[500]"
           >
-           ALERT
+            ALERT
           </p>
           <p v-if="toggle" class="text-[#465569] text-[15px] font-[500]">
-           ALERT
+            ALERT
           </p>
         </div>
       </router-link>
 
       <router-link
-        :to="{name:'tabs'}"
-        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+        :to="{ name: 'tabs' }"
+        class="mx-2 rounded-lg mt-4 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
-          <i class="fa-solid fa-file  text-[20px] text-[#4b93b1]"></i>
+          <i class="fa-solid fa-file text-[20px] text-[#4b93b1]"></i>
           <p
             v-if="!toggle"
             class="group-hover:flex text-[15px] hidden text-[#465569] font-[500]"
@@ -123,12 +124,12 @@
         </div>
       </router-link>
 
-       <router-link
-        :to="{name:'AccordionView'}"
-        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+      <router-link
+        :to="{ name: 'AccordionView' }"
+        class="mx-2 rounded-lg mt-4 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
-          <i class="fa-solid fa-file  text-[20px] text-[#4b93b1]"></i>
+          <i class="fa-brands fa-slack text-[#4b93b1]"></i>
           <p
             v-if="!toggle"
             class="group-hover:flex text-[15px] hidden text-[#465569] font-[500]"
@@ -139,13 +140,13 @@
             Accordion
           </p>
         </div>
-          </router-link>
-       <router-link
-        :to="{name:'TableViews'}"
-        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+      </router-link>
+      <router-link
+        :to="{ name: 'TableViews' }"
+        class="mx-2 rounded-lg mt-4 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
-          <i class="fa-solid fa-file  text-[20px] text-[#4b93b1]"></i>
+          <i class="fa-solid fa-table text-[#4b93b1]"></i>
           <p
             v-if="!toggle"
             class="group-hover:flex text-[15px] hidden text-[#465569] font-[500]"
@@ -154,51 +155,34 @@
           </p>
           <p v-if="toggle" class="text-[#465569] text-[15px] font-[500]">
             TableViews
-          </p>
-        </div>
-      </router-link>
-      
-       <router-link
-        :to="{name:'DatePicker'}"
-        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
-      >
-        <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
-          <i class="fa-solid fa-book-bookmark   text-[20px] text-[#4b93b1]"></i>
-          <p
-            v-if="!toggle"
-            class="group-hover:flex text-[15px] hidden text-[#465569] font-[500]"
-          >
-            DatePicker
-          </p>
-          <p v-if="toggle" class="text-[#465569] text-[15px] font-[500]">
-            DatePicker
-          </p>
-        </div>
-      </router-link>
-             <router-link
-        :to="{name:'displayView'}"
-        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
-      >
-        <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
-          <i class="fa-solid fa-book-bookmark   text-[20px] text-[#4b93b1]"></i>
-          <p
-            v-if="!toggle"
-            class="group-hover:flex text-[15px] hidden text-[#465569] font-[500]"
-          >
-            display
-          </p>
-          <p v-if="toggle" class="text-[#465569] text-[15px] font-[500]">
-            display
           </p>
         </div>
       </router-link>
 
-                   <router-link
-        :to="{name:'TomSelectView'}"
-        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+      <router-link
+        :to="{ name: 'DatePicker' }"
+        class="mx-2 rounded-lg mt-4 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
-          <i class="fa-solid fa-book-bookmark   text-[20px] text-[#4b93b1]"></i>
+         <i class="fa-solid fa-calendar text-[#4b93b1]"></i>
+          <p
+            v-if="!toggle"
+            class="group-hover:flex text-[15px] hidden text-[#465569] font-[500]"
+          >
+            DatePicker
+          </p>
+          <p v-if="toggle" class="text-[#465569] text-[15px] font-[500]">
+            DatePicker
+          </p>
+        </div>
+      </router-link>
+
+      <router-link
+        :to="{ name: 'TomSelectView' }"
+        class="mx-2 rounded-lg mt-4 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+      >
+        <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
+        <i class="fa-solid fa-image text-[#4b93b1]"></i>
           <p
             v-if="!toggle"
             class="group-hover:flex text-[15px] hidden text-[#465569] font-[500]"
@@ -211,12 +195,12 @@
         </div>
       </router-link>
 
-                      <router-link
-        :to="{name:'ImageZoomView'}"
-        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+      <router-link
+        :to="{ name: 'ImageZoomView' }"
+        class="mx-2 rounded-lg mt-4 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
-          <i class="fa-solid fa-book-bookmark   text-[20px] text-[#4b93b1]"></i>
+          <i class="fa-solid fa-magnifying-glass text-[#4b93b1]"></i>
           <p
             v-if="!toggle"
             class="group-hover:flex text-[15px] hidden text-[#465569] font-[500]"
@@ -228,215 +212,123 @@
           </p>
         </div>
       </router-link>
-
-      
-
-
-      
-  
     </div>
-   <div 
-    v-if="isopen"
-      class="w-[300px] overflow-y-auto
-     flex lg:hidden md:hidden  flex-col bg-[#f3f5f8] group fixed bottom-0 top-0 left-0 transition-all duration-300 
-        "
+    <div
+      v-if="isopen"
+      class="w-[300px] overflow-y-auto flex lg:hidden md:hidden flex-col bg-[#f3f5f8] group fixed bottom-0 top-0 left-0 transition-all duration-300"
       style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6)"
-     >
+    >
       <!-- all icons are here -->
       <div class="flex justify-between items-center">
         <div class="flex">
-          <i 
-            class="fa-brands fa-stackpath text-[#206c93] text-[35px] pl-6 pr-3 pt-3 text-5  rounded-full "
+          <i
+            class="fa-brands fa-stackpath text-[#206c93] text-[35px] pl-6 pr-3 pt-3 text-5 rounded-full"
           ></i>
-          <p
-            
-            class="mt-5  text-[#465569] font-[500]"
-          >
-            ECHO
-          </p>
+          <p class="mt-5 text-[#465569] font-[500]">ECHO</p>
         </div>
         <div class="mr-2">
-         <i
-          @click="$emit('toggle-this', !isopen)"
-          class="fa-solid fa-xmark text-[20px] text-[#4b93b1] pr-4 mt-2 p-1 flex lg:hidden md:hidden"
-        ></i>
+          <i
+            @click="$emit('toggle-this', !isopen)"
+            class="fa-solid fa-xmark text-[20px] text-[#4b93b1] pr-4 mt-2 p-1 flex lg:hidden md:hidden"
+          ></i>
         </div>
       </div>
 
       <div class="ml-8">
-        <p
-         
-          class="mt-5  text-[#c6d0e0] text-[15px] font-[500]"
-        >
-          COMPONENTS
-        </p>
+        <p class="mt-5 text-[#c6d0e0] text-[15px] font-[500]">COMPONENTS</p>
       </div>
 
       <!-- content -->
       <router-link
-           :to="{name:'buttons'}"
+        :to="{ name: 'buttons' }"
         class="mx-2 rounded-lg mt-5 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
-        <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center ">
-          <i class="fa-solid fa-gauge-high text-[20px]  text-[#4b93b1]"></i>
-          <p
-        
-            class=" text-[15px]  text-[#465569] font-[500]"
-          >
-            BUTTONS
-          </p>
-          
+        <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
+          <i class="fa-solid fa-gauge-high text-[20px] text-[#4b93b1]"></i>
+          <p class="text-[15px] text-[#465569] font-[500]">BUTTONS</p>
         </div>
       </router-link>
 
       <router-link
-        :to="{name:'inputGroup'}"
-      
-        class="mx-2 rounded-lg mt-10 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+        :to="{ name: 'inputGroup' }"
+        class="mx-2 rounded-lg mt-4 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
-          <i class="fa-duotone fa-solid fa-chart-line text-[20px] text-[#4b93b1]"></i>
-          <p
-        
-            class=" text-[15px] 
-             text-[#465569] font-[500]"
-          >
-           INPUTGROUPS
-          </p>
-          
+          <i
+            class="fa-duotone fa-solid fa-chart-line text-[20px] text-[#4b93b1]"
+          ></i>
+          <p class="text-[15px] text-[#465569] font-[500]">INPUTGROUPS</p>
         </div>
       </router-link>
 
       <router-link
-        :to="{name:'alert'}"
-        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+        :to="{ name: 'alert' }"
+        class="mx-2 rounded-lg mt-4 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
           <i class="fa-solid fa-book-bookmark text-[20px] text-[#4b93b1]"></i>
-          <p
-        
-            class=" text-[15px]  text-[#465569] font-[500]"
-          >
-           ALERT
-          </p>
-          
+          <p class="text-[15px] text-[#465569] font-[500]">ALERT</p>
         </div>
       </router-link>
 
       <router-link
-        :to="{name:'tabs'}"
-        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+        :to="{ name: 'tabs' }"
+        class="mx-2 rounded-lg mt-4 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
           <i class="fa-solid fa-file text-[20px] text-[#4b93b1]"></i>
-          <p
-        
-            class=" text-[15px]  text-[#465569] font-[500]"
-          >
-            TABS
-          </p>
-          
+          <p class="text-[15px] text-[#465569] font-[500]">TABS</p>
         </div>
       </router-link>
       <router-link
-        :to="{name:'TableViews'}"
-        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+        :to="{ name: 'TableViews' }"
+        class="mx-2 rounded-lg mt-4 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
-          <i class="fa-solid fa-file text-[20px] text-[#4b93b1]"></i>
-          <p
-        
-            class=" text-[15px]  text-[#465569] font-[500]"
-          >
-            Table
-          </p>
-          
+          <i class="fa-solid fa-table text-[#4b93b1]"></i>
+          <p class="text-[15px] text-[#465569] font-[500]">Table</p>
         </div>
       </router-link>
 
       <router-link
-        :to="{name:'AccordionView'}"
-        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+        :to="{ name: 'AccordionView' }"
+        class="mx-2 rounded-lg mt-4 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
-          <i class="fa-solid fa-file text-[20px] text-[#4b93b1]"></i>
-          <p
-        
-            class=" text-[15px]  text-[#465569] font-[500]"
-          >
-            Accordion
-          </p>
-          
+          <i class="fa-brands fa-slack text-[#4b93b1]"></i>
+          <p class="text-[15px] text-[#465569] font-[500]">Accordion</p>
         </div>
       </router-link>
       <router-link
-        :to="{name:'DatePicker'}"
-        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+        :to="{ name: 'DatePicker' }"
+        class="mx-2 rounded-lg mt-4 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
-          <i class="fa-solid fa-file text-[20px] text-[#4b93b1]"></i>
-          <p
-        
-            class=" text-[15px]  text-[#465569] font-[500]"
-          >
-            DatePicker  
-          </p>
-          
+          <i class="fa-solid fa-calendar text-[#4b93b1]"></i>
+          <p class="text-[15px] text-[#465569] font-[500]">DatePicker</p>
         </div>
       </router-link>
 
-            <router-link
-        :to="{name:'displayView'}"
-        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+      <router-link
+        :to="{ name: 'TomSelectView' }"
+        class="mx-2 rounded-lg mt-4 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
-          <i class="fa-solid fa-file text-[20px] text-[#4b93b1]"></i>
-          <p
-        
-            class=" text-[15px]  text-[#465569] font-[500]"
-          >
-            Display  
-          </p>
-          
+          <i class="fa-solid fa-image text-[#4b93b1]"></i>
+          <p class="text-[15px] text-[#465569] font-[500]">TomSelectView</p>
         </div>
       </router-link>
 
-                  <router-link
-        :to="{name:'TomSelectView'}"
-        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
+      <router-link
+        :to="{ name: 'ImageZoomView' }"
+        class="mx-2 rounded-lg mt-4 hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
       >
         <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
-          <i class="fa-solid fa-file text-[20px] text-[#4b93b1]"></i>
-          <p
-        
-            class=" text-[15px]  text-[#465569] font-[500]"
-          >
-            TomSelectView  
-          </p>
-          
+         <i class="fa-solid fa-magnifying-glass text-[#4b93b1]"></i>
+          <p class="text-[15px] text-[#465569] font-[500]">ImageZoomView</p>
         </div>
       </router-link>
-
-                        <router-link
-        :to="{name:'ImageZoomView'}"
-        class="mx-2 rounded-lg mt-10  hover:shadow-[0_4px_6px_rgba(0,0,0,0.6)]"
-      >
-        <div class="ml-6 my-4 gap-3 mx-6 flex justify-start items-center">
-          <i class="fa-solid fa-file text-[20px] text-[#4b93b1]"></i>
-          <p
-        
-            class=" text-[15px]  text-[#465569] font-[500]"
-          >
-            ImageZoomView  
-          </p>
-          
-        </div>
-      </router-link>
- 
-     </div>
-
-     
-      
+    </div>
   </div>
 </template>
 
@@ -447,21 +339,20 @@ export default {
   data() {
     return {
       toggle: false,
-      hover: false
+      hover: false,
     };
   },
 
-  methods:{
-    togglesidebar(){
-      this.toggle = !this.toggle
-    }
-  }
+  methods: {
+    togglesidebar() {
+      this.toggle = !this.toggle;
+    },
+  },
 };
 </script>
 
 <style scoped>
 .router-link-exact-active {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6)
-
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
 }
 </style>
